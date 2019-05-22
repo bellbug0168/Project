@@ -9,7 +9,7 @@ $(function(){
 
     $('#mslider').children('a').on('click', function(){
         $('#mslider').stop().animate({'left': '47%'},500);
-        $('#cycle2move').stop().animate({'left': '58%'},500);
+        $('#cycle2move').stop().animate({'left': '54%'},500);
         $('#menu').css('display', 'inline-block');
     })
 })
