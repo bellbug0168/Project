@@ -13,6 +13,7 @@
 
 #wrap{
     position: relative;
+    overflow: hidden;
 }
 
 header {
@@ -38,13 +39,6 @@ body {
 #cycle img {
     width: 100%;
     height: 100%;
-}
-
-#menu,
-#mslider {
-    display: inline-block;
-    height: 1080px;
-    z-index: 30;
 }
 
 #menu {
@@ -75,6 +69,7 @@ body {
     height: 1080px;
     background-color: dimgrey;
     font-size: 50px;
+    z-index: 4;
 }
 
 #mslider div{
