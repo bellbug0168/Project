@@ -1,25 +1,14 @@
 $(function () {
-    setInterval(function(){
-        $('#cycle img').height($('body').height());
-        $('#cycle2 img').height($('body').height());
-    },100);
-    $(window).on("load resize", function () {
-        $('html').width($(this).width());
-        $('html').height($(this).height());
+
+    $(window).on("resize load", function () {
+
         $('body').height($(this).height()); $('#cycle').height($(this).height());
         $('#mslider').height($(this).height());
         $('#cycle2').height($(this).height());
-        $('#cycle2move').height($(this).height());
         $('#menu').height($(this).height());
     })
 
-    $('#cycle').cycle({
-        fx: 'scrollLeft',
-        delay: -2000
-    });
-    $('#cycle2').cycle({
-        delay: -2000
-    });
+
 
     $('#mslider').children('a').on('click', function () {
 

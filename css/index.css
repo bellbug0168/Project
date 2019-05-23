@@ -33,7 +33,13 @@ body {
     top: 0;
     display: inline-block;
     width: 47.5%;
-    height: 1080px;
+    height: 100%;
+}
+
+#cycle a{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 #cycle img {
@@ -46,6 +52,7 @@ body {
     left: 0;
     background-color:dimgrey;
     width: 280px;
+    height: 100%;
     display: none;
     z-index: 1;
 }
@@ -58,6 +65,7 @@ body {
 #am {
     position: relative;
     left: 47.5%;
+    height: 100%;
 }
 
 #mslider {
@@ -66,7 +74,6 @@ body {
     left: 0;
     display: inline-block;
     width: 75px;
-    height: 1080px;
     background-color: dimgrey;
     font-size: 50px;
     z-index: 4;
