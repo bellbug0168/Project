@@ -1,48 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+.hide{
+    display: none;
+}
+
+header {
     position: relative;
 }
 
-#cycle{
+body {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#cycle {
     position: absolute;
     left: 0;
     top: 0;
     display: inline-block;
-    width: 40%;
+    width: 45%;
     height: 1080px;
 }
 
-#cycle img{
+#cycle img {
     width: 100%;
     height: 100%;
 }
 
-#menu, #mslider{
-
+#menu,
+#mslider {
     display: inline-block;
     height: 1080px;
     z-index: 30;
 }
 
-#menu{
-    position:relative;
-    left: 40%;
-    background-color: aqua;
-    width: 120px;
-    display: none;
-}
-
-#menu li{
-    list-style: none;
-}
-
-#mslider{
+#menu {
     position: absolute;
+    left: 0;
+    background-color: aqua;
+    width: 280px;
+    display: none;
+    z-index: 1;
+}
+
+#menu li {
+    list-style: none;
+    z-index: 0;
+}
+
+#am {
+    position: relative;
+    left: 45%;
+}
+
+#mslider {
+    position: relative;
     top: 0;
-    left: 40%;
+    left: 0;
     display: inline-block;
     width: 120px;
     height: 1080px;
@@ -50,28 +69,27 @@ header{
     font-size: 50px;
 }
 
-#cycle2move{
-    border: 1px solid black;
+#cycle2move {
     position: absolute;
-    left:47%;
-    top:0;
-    width: 40%;
-    height: 1080px;
+    left: 51%;
+    top: 0;
+    width: 49%;
+    height: 100%;
     display: inline-block;
-    z-index: -1;
+    z-index: 1;
 }
 
-#cycle2{
+#cycle2 {
     position: relative;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 1080px;
+    height: 100%;
     display: inline-block;
-    z-index: -1;
+    z-index: 1;
 }
 
-#cycle2 img{
+#cycle2 img {
     width: 100%;
     height: 100%;
 }
