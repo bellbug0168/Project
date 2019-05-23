@@ -3,15 +3,13 @@
     padding: 0;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.mainhide{
+.mainhide {}
 
-}
-
-#wrap{
+#wrap {
     position: relative;
     overflow: hidden;
 }
@@ -21,7 +19,7 @@ header {
 }
 
 body {
-    background-color: dimgrey;
+    background-color: floralwhite;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -36,7 +34,7 @@ body {
     height: 100%;
 }
 
-#cycle a{
+#cycle a {
     width: 100%;
     height: 100%;
     display: block;
@@ -50,16 +48,16 @@ body {
 #menu {
     position: absolute;
     left: 0;
-    background-color:dimgrey;
+    background-color: floralwhite;
     width: 280px;
     height: 100%;
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 #menu li {
     list-style: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 #am {
@@ -74,14 +72,14 @@ body {
     left: 0;
     display: inline-block;
     width: 75px;
-    background-color: dimgrey;
+    background-color: floralwhite;
     font-size: 50px;
     z-index: 4;
 }
 
-#mslider div{
+#mslider div {
     height: 90%;
-    background-color: dimgrey;
+    background-color: floralwhite;
 }
 
 #cycle2move {
@@ -91,7 +89,7 @@ body {
     width: 49%;
     height: 100%;
     display: inline-block;
-    z-index: 1;
+    z-index: 2;
 }
 
 #cycle2 {
@@ -109,4 +107,22 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#section{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 47%;
+    height: 100%;
+}
+
+#section article{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 4px solid white;
+    height: 100%;
+    background-color: aliceblue;
+    z-index: 1;
 }
