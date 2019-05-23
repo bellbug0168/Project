@@ -14,35 +14,40 @@
 <body>
     <header>
         <div id="wrap">
-            <div id="cycle" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-slides="> a">
+            <div id="cycle" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> a">
                 <a href="#"><img src="img/co_man_1315528609900x_ambiance_large_11.jpg" alt="이미지"></a>
                 <a href="#"><img src="img/co_man_1315528609900x_ambiance_large_11.jpg" alt="이미지"></a>
                 <a href="#"><img src="img/sfef.png" alt="이미지2"></a>
             </div>
+
             <div id="am">
                 <div id="menu" class="hide">
-                   <nav>
-                    <ul>
-                        <li><a href="#">Intro</a></li>
-                        <li><a href="#">Main Site</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Suppot</a></li>
-                        <li><a href="#">Map</a></li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Intro</a></li>
+                            <li><a href="#">Main Site</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Suppot</a></li>
+                            <li><a href="#">Map</a></li>
+                        </ul>
                     </nav>
                 </div>
                 <div id="mslider">
                     <a href="#"><img src="img/icon.png" alt="아이콘"></a>
-                    <div></div>
+                    <div id="pnbtn">
+                        <a href="#" id="prev"><img src="/img/Arrows-Left-Arrow-icon.png" alt="이전"></a>
+                        <a href="#" id="next"><img src="/img/Arrows-Right-Arrow-icon.png" alt="다음"></a>
+                    </div>
                 </div>
             </div>
             <div id="cycle2move">
-                <div id="cycle2" class="cycle-slideshow">
+                <div id="cycle2" class="cycle-slideshow" data-cycle-prev="#prev" data-cycle-next="#next">
                     <img src="img/sfef.png" alt="사진테스트">
                     <img src="img/fewgweg.png" alt="사진테스트2">
                 </div>
             </div>
         </div>
+
     </header>
     <section id="section">
 
@@ -112,7 +117,6 @@
                         title: "프로젝트 빌딩"
                     })
                 }
-
             </script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_2MNS8xHNWrpwOHTzACMw01LUdl-KjP4&callback=initMap" async defer></script>
             <div>
@@ -131,6 +135,4 @@
         </article>
     </section>
 
-</body>
-
-</html>
+</body></html>

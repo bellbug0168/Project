@@ -20,12 +20,12 @@ $(function () {
                 'left': '235px'
             }, 300);
             $('#menu').show();
-            $('#mslider div').css('background-color', 'white');
+            $('#mslider div').css('background-color', 'floralwhite');
             $('#menu').removeClass('hide');
             setTimeout(function () {
                 $('#menu').css('z-index', '3');
             }, 300)
-            $('#mslider img').attr('src', 'img/icon2.png');
+            $('#mslider img:eq(0)').attr('src', 'img/icon2.png');
 
         } else {
 
@@ -43,7 +43,7 @@ $(function () {
                 $('#menu').hide();
 
             }, 300);
-            $('#mslider img').attr('src', 'img/icon.png');
+            $('#mslider img:eq(0)').attr('src', 'img/icon.png');
 
         }
     });
@@ -58,7 +58,7 @@ $(function () {
             $('#mslider').stop().animate({
                 'left': '0px'
             }, 300);
-            $('#mslider div').css('background-color', 'white');
+            $('#mslider div').css('background-color', 'floralwhite');
             setTimeout(function () {
                 $('#menu').addClass('hide');
 
@@ -104,7 +104,7 @@ $(function () {
             $('#mslider').stop().animate({
                 'left': '0px'
             }, 300);
-            $('#mslider div').css('background-color', 'white');
+            $('#mslider div').css('background-color', 'floralwhite');
             setTimeout(function () {
                 $('#menu').addClass('hide');
 
@@ -149,7 +149,7 @@ $(function () {
             $('#mslider').stop().animate({
                 'left': '0px'
             }, 300);
-            $('#mslider div').css('background-color', 'white');
+            $('#mslider div').css('background-color', 'floralwhite');
             setTimeout(function () {
                 $('#menu').addClass('hide');
 
@@ -183,7 +183,7 @@ $(function () {
             $('#mslider').stop().animate({
                 'left': '0px'
             }, 300);
-            $('#mslider div').css('background-color', 'white');
+            $('#mslider div').css('background-color', 'floralwhite');
             setTimeout(function () {
                 $('#menu').addClass('hide');
 
@@ -220,7 +220,7 @@ $(function () {
     $('#menu nav li').on("mouseleave", function(){
         $(this).css('background-color', 'floralwhite');
     })
-    $('#mslider a').on("focus",function(){
+    $('#mslider a:eq(0)').on("focus",function(){
         $('.keyhandler').removeClass('keyhandler');
         $(this).addClass('keyhandler');
     })
@@ -230,15 +230,15 @@ $(function () {
         switch(event.which){
             case 40:
                 if($('#menu').hasClass('hide')){
-                    $('#mslider a').focus();
+                    $('#mslider a:eq(0)').focus();
                     console.log('menu focus');
                 }else{
                      console.log('down');
                     if($('#menu nav ul li a:eq(4)').hasClass('keyhandler')){
                         $('#menu nav ul li a:eq(0)').focus();
-                    }else if($('#mslider a').hasClass('keyhandler')){
+                    }else if($('#mslider a:eq(0)').hasClass('keyhandler')){
                         console.log('main has key');
-                        $('#mslider a').focus();
+                        $('#mslider a:eq(0)').focus();
                     }else{
                        console.log('dd') ;
                         keyhandler.parent().next().children('a').focus();
@@ -248,9 +248,9 @@ $(function () {
             case 37:
                 console.log('left');
                 if($('#menu').hasClass('hide')){
-                   $('#mslider a').focus();
+                   $('#mslider a:eq(0)').focus();
                     console.log('menu focus');
-                }else if($('#mslider a').hasClass('keyhandler')){
+                }else if($('#mslider a:eq(0)').hasClass('keyhandler')){
                         console.log('focus');
                         $('#menu nav ul li a:eq(0)').focus();
 
@@ -261,13 +261,13 @@ $(function () {
             case 39:
                 console.log('right');
                 if($('#menu').hasClass('hide')){
-                   $('#mslider a').focus();
+                   $('#mslider a:eq(0)').focus();
                     console.log('menu focus');
-                }else if($('#mslider a').hasClass('keyhandler')){
+                }else if($('#mslider a:eq(0)').hasClass('keyhandler')){
                         console.log('focus');
 
                 }else{
-                    $('#mslider a').focus();
+                    $('#mslider a:eq(0)').focus();
                 }
                 break;
             case 38:
@@ -277,9 +277,9 @@ $(function () {
                      console.log('up');
                     if($('#menu nav ul li a:eq(0)').hasClass('keyhandler')){
                         $('#menu nav ul li a:eq(4)').focus();
-                    }else if($('#mslider a').hasClass('keyhandler')){
+                    }else if($('#mslider a:eq(0)').hasClass('keyhandler')){
                         console.log('main has key');
-                        $('#mslider a').focus();
+                        $('#mslider a:eq(0)').focus();
                     }else{
                        console.log('dd') ;
                         keyhandler.parent().prev().children('a').focus();
