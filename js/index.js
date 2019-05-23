@@ -52,6 +52,15 @@ $(function () {
         }
     });
     $('#menu li').eq(0).on('click',function(){
-        $('#wrap').stop().animate({'left':'-47.5%'},400);
+       if(!($('#wrap').hasClass('mainhide'))){
+           $('#wrap').stop().animate({'left':'-47.5%'},400);
+           $('#wrap').addClass('mainhide');
+       }
+    });
+    $('#menu li').eq(1).on('click',function(){
+       if(($('#wrap').hasClass('mainhide'))){
+           $('#wrap').stop().animate({'left':'0'},400);
+           $('#wrap').removeClass('mainhide');
+       }
     });
 })
