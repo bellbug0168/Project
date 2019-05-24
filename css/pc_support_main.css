@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding-top: 40px;
+    background-color: antiquewhite;
+}
+
+/*메인-메뉴*/
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #f5b335;
+    transition: top 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.nav-up {
+    top: -60px;
+}
+
+.nav-down{
+    top: 0px;
+}
+
+.home{
+    float: left;
+}
+
+.menu{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    padding: 20px 10px;
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 20px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+    text-decoration: underline;
+    color: white;
+}
+/*메인-메뉴 끝*/
+
+/*메인-베너*/
+.banner{
+    background-image: url(/img/texture-3319946_1920.jpg);
+    margin-top: -60px;
+    width: 100%;
+    height: 300px;
+}
+
+.banner h1{
+    padding: 110px 40px;
+    color: white;
+}
+/*메인-베너 끝*/
+
+/*메인 서비스 메뉴*/
+.service{
+    margin: 0px auto;
+    width: 1000px;
+    height: 690px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.service section{
+    display: inline-block;
+}
+
+.service_img{
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+    margin-left: 10%;
+    margin-top: 35px;
+
+}
+
+.service_img div{
+    width: 500px;
+    height: 300px;
+    background-image: url(/img/wristwatch-2135219_1920.jpg);
+    background-position: -10px;
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+
+.service_img div:hover{
+    filter: blur(2px);
+}
+
+.service_as{
+    width: 300px;
+    height: 145px;
+    position: relative;
+    left: 610px;
+    top: -335px;
+    margin-top: 35px;
+    margin-left: 5px;
+    background-color: cornflowerblue;
+}
+
+.service_as h2{
+    width: 300px;
+    height: 145px;
+}
+
+.service_as a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 55px;
+    padding: 60px 130px;
+}
+
+.service_as h2:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.service_as a:hover, .service_as a:focus{
+    color: black;
+    text-decoration: underline;
+}
+
+.service_question{
+    width: 300px;
+    height: 145px;
+    position: relative;
+    top: -515px;
+    left: 610px;
+    margin-top: 190px;
+    margin-left: 5px;
+    background-color: darkgrey;
+}
+
+.service_question h2{
+    width: 300px;
+    height: 145px;
+}
+
+.service_question a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 55px;
+    padding: 60px ;
+    padding-left: 120px;
+    padding-right: 132px;
+}
+
+.service_question h2:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.service_question a:hover, .service_question a:focus{
+    color: black;
+    text-decoration: underline;
+}
+
+.service_tel{
+    background-image: url(/img/time-call.png);
+    background-position: 60px 50px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 245px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+    top: -508px;
+    left: 100px;
+}
+
+.service_tel h2{
+    margin-top: 200px;
+    margin-left: 1px;
+}
+
+.service_tel a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 98px;
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
+
+.service_tel_view{
+    width: 245px;
+    height: 300px;
+    position: absolute;
+    top: 625px;
+    left: 105px;
+    border: 1px solid;
+}
+
+.service_email{
+    background-image: url(/img/email.png);
+    background-position: 60px 50px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 245px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+    top: -810px;
+    left: 355px;
+}
+
+.service_email h2{
+    margin-top: 200px;
+    margin-left: 80px;
+}
+
+.service_FAQ{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -1111px;
+    left: 615px;
+    background-color: coral;
+}
+
+.service_FAQ h2{
+    width: 300px;
+    height: 300px;
+}
+
+.service_FAQ a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 135px;
+    padding: 135px 127px;
+
+}
+
+.service_FAQ h2:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.service_FAQ a:hover, .service_FAQ a:focus{
+    color: black;
+    text-decoration: underline;
+}
+/*메인 서비스 메뉴 끝*/
