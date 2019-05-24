@@ -161,10 +161,14 @@ body {
     top: 0;
     left: 85px;
     border: 10px double silver;
-    height: 100%;
+
     width: 100%;
     background-color: white;
     z-index: 100;
+}
+
+#section article:nth-of-type(4){
+    height: 100%;
 }
 
 #section h1, h2{
