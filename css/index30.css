@@ -51,17 +51,21 @@ nav.mhide {
     position: absolute;
     top: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .mhide ul {
     background-color: antiquewhite;
     padding: 10px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .mhide li {
     display: inline-block;
-    margin: 0 10px;
+    width: 150px;
+    margin-right: 20px;;
+    box-sizing: border-box;
 }
 
 .mhide li a {
@@ -71,14 +75,14 @@ nav.mhide {
 
 #cycle2move {
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
 }
 
 #section article {
     box-sizing: border-box;
     position: absolute;
-    top: 2.8em;
+    top: 4em;
     width: 100%;
     height: auto;
     border: 7px double black;
@@ -93,7 +97,7 @@ nav.mhide {
 
 #section article ul {
     font-size: 20px;
-    font
+
 }
 
 #section li {

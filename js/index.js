@@ -457,6 +457,7 @@ $(function () {
                 }
             })
         } else {
+            $('select').selectric();
             $('#msel').on('change', function () {
                 var sel = $('#msel').val();
                 console.log(sel);
