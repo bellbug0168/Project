@@ -7,6 +7,87 @@ body {
     background-color: antiquewhite;
 }
 
+@media ( min-width: 1024px ) {
+    .nav-up {
+        top: -60px;
+    }
+
+    .nav-down{
+        top: 0px;
+    }
+
+    .menu{
+    float: right;
+    margin-right: 50px;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .menu img{
+        display: none;
+    }
+
+    nav ul li{
+        padding: 20px 10px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav ul li a{
+        padding: 20px 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+@media ( max-width: 1023px ) {
+    .home li{
+        padding: 20px 10px;
+        list-style: none;
+    }
+
+    .home li a{
+        padding-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu{
+        position: relative;
+        margin-top: -20px;
+        width: 100%;
+        float: right;
+    }
+
+    .menu img{
+        float: right;
+        margin-top: -60px;
+        width: 60px;
+    }
+
+    .menu li{
+        margin-top: -20px;
+
+    }
+
+    .menu li a{
+        margin-top: 20px;
+        display: block;
+        padding-left: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: #f5b335;
+        border-top: 1px solid;
+
+    }
+}
+
+
 /*메인-메뉴*/
 nav {
     position:fixed;
@@ -19,33 +100,14 @@ nav {
     z-index: 1;
 }
 
-.nav-up {
-    top: -60px;
-}
-
-.nav-down{
-    top: 0px;
-}
-
 .home{
     float: left;
 }
 
-.menu{
-    float: right;
-    margin-right: 50px;
-}
-
-nav ul li{
-    padding: 20px 10px;
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li a{
-    padding: 20px 30px;
-    text-decoration: none;
-    color: black;
+.home img{
+    margin-top: -15px;
+    margin-left: -20px;
+    height: 50px;
 }
 
 nav ul li a:hover, nav ul li a:focus{
