@@ -66,5 +66,7 @@ $(document).ready(function () {
         current = i;
     }
 
-
+    $('#brandHover').on('mouseover',function(){
+        $(this).slideDown();
+    });
 });
