@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+h1,h2{
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 20px;
+}
+
 body {
     background-color: aliceblue;
 }
@@ -55,7 +60,7 @@ nav.mhide {
 }
 
 .mhide ul {
-    background-color: antiquewhite;
+    background-color:goldenrod;
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
@@ -71,6 +76,12 @@ nav.mhide {
 .mhide li a {
     text-decoration: none;
     font-weight: 800;
+}
+
+.mhide ul li h2{
+    color:gold;
+    position: relative;
+    top: -10px;
 }
 
 #cycle2move {
@@ -111,4 +122,13 @@ nav.mhide {
 
 #map {
     height: 500px;
+}
+
+#carousel{
+    height: 400px;
+}
+
+#carousel img{
+    width: 200px;
+    height: 300px;
 }

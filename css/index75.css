@@ -183,7 +183,7 @@ body {
     box-sizing: border-box;
     padding: 10px 40px;
     top: 0;
-    left: 85px;
+    left: 80px;
     border: 10px double silver;
 
     width: 100%;
@@ -199,6 +199,7 @@ body {
 h2 {
     font-size: 3em;
     text-align: center;
+    font-family: 'Satisfy', cursive;
     font-style: italic;
     margin: 0.8em;
 }
@@ -227,21 +228,21 @@ h2 {
     text-indent: 0.7em;
 }
 
-#section article div:first-of-type img {
+#content div:first-of-type img {
     float: left;
     width: 15em;
     height: 12em;
     margin-bottom: 20px;
 }
 
-#section article div:nth-of-type(2) img {
+#content div:nth-of-type(2) img {
     float: right;
     width: 15em;
     height: 12em;
     margin-bottom: 20px;
 }
 
-#section article div:nth-of-type(3) img {
+#content div:nth-of-type(3) img {
     float: left;
     width: 15em;
     height: 12em;
@@ -269,4 +270,12 @@ footer {
     margin-top: 20px;
     position: relative;
     left: 700%;
+}
+#carousel{
+    height: 500px;
+}
+
+#carousel img{
+    width: 300px;
+    height: 400px;
 }

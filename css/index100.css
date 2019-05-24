@@ -227,21 +227,21 @@ h2 {
     text-indent: 0.7em;
 }
 
-#section article div:first-of-type img {
+#content div:first-of-type img {
     float: left;
     width: 15em;
     height: 12em;
     margin-bottom: 20px;
 }
 
-#section article div:nth-of-type(2) img {
+#content div:nth-of-type(2) img {
     float: right;
     width: 15em;
     height: 12em;
     margin-bottom: 20px;
 }
 
-#section article div:nth-of-type(3) img {
+#content div:nth-of-type(3) img {
     float: left;
     width: 15em;
     height: 12em;
@@ -269,4 +269,13 @@ footer {
     margin-top: 20px;
     position: relative;
     left: 700%;
+}
+
+#carousel{
+    height: 500px;
+}
+
+#carousel img{
+    width: 300px;
+    height: 400px;
 }

@@ -1,5 +1,11 @@
 $(function () {
-
+     $("#carousel").flipster({
+                buttons:true,
+                style:'coverflow',
+                loop:true,
+                autoplay:2000,
+                scrollwheel:false
+            });
     var width = 0;
     $(window).on("resize load", function () {
         width = $(window).width();
@@ -223,6 +229,7 @@ $(function () {
                         'left': '0px'
                     }, 300);
                     $('#mslider div').css('background-color', 'floralwhite');
+                    $('#mslider img:eq(0)').attr('src', 'img/icon.png');
                     setTimeout(function () {
                         $('#menu').addClass('hide');
 
@@ -269,6 +276,7 @@ $(function () {
                         'left': '0px'
                     }, 300);
                     $('#mslider div').css('background-color', 'floralwhite');
+                    $('#mslider img:eq(0)').attr('src', 'img/icon.png');
                     setTimeout(function () {
                         $('#menu').addClass('hide');
 
@@ -318,6 +326,7 @@ $(function () {
                         'left': '0px'
                     }, 300);
                     $('#mslider div').css('background-color', 'floralwhite');
+                    $('#mslider img:eq(0)').attr('src', 'img/icon.png');
                     setTimeout(function () {
                         $('#menu').addClass('hide');
 
@@ -352,6 +361,7 @@ $(function () {
                         'left': '0px'
                     }, 300);
                     $('#mslider div').css('background-color', 'floralwhite');
+                    $('#mslider img:eq(0)').attr('src', 'img/icon.png');
                     setTimeout(function () {
                         $('#menu').addClass('hide');
 
