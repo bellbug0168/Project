@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    margin-top: 30px;
+    border: 5px double black;
+}
+
+.bar{
+    clear: both;
+    width: 100%;
+    border: 1px solid lightgrey;
+    margin: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.mainhide {}
+
+#wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+}
+
+body {
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#cycle {
+    position: relative;
+    left: 76px;
+    top: 0;
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+}
+
+#cycle a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#cycle img {
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    position: absolute;
+    left: 0;
+    background-color: floralwhite;
+    width: 280px;
+    height: 100%;
+    display: none;
+    z-index: 2;
+    border: 3px inset silver;
+}
+
+#menu li {
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 2;
+    margin-right: 40px;
+    display: block;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#am {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#mslider {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 75px;
+    background-color: floralwhite;
+    font-size: 50px;
+    z-index: 100;
+    border: 5px groove silver;
+}
+
+#mslider img{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+#mslider div {
+    height: 90%;
+    background-color: floralwhite;
+}
+
+#cycle2move {
+    position: absolute;
+    left: 51%;
+    top: 0;
+    width: 49%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+}
+
+#cycle2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: -1;
+}
+
+#cycle2 img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#section{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+}
+
+#section article{
+    position: absolute;
+    box-sizing:border-box;
+    padding: 10px 40px;
+    top: 0;
+    left: 85px;
+    border: 10px double silver;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+
+#section h1, h2{
+    font-size: 3em;
+    text-align: center;
+    font-style: italic;
+    margin: 0.8em;
+}
+
+#section h3{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-indent: 0.5em;
+}
+
+#section ul{
+    font-size: 1.5em;
+    list-style-image: url(/img/li_tit_style.gif);
+    margin-left: 4em;
+    margin-top: 0.5em;
+
+}
+
+#section li{
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+#section p{
+    font-size: 1em;
+    text-indent: 0.7em;
+}
+
+#section article div:first-of-type img{
+    float: left;
+    width: 15em;
+    height: 12em;
+    margin-bottom: 20px;
+}
+#section article div:nth-of-type(2) img{
+    float: right;
+    width: 15em;
+    height: 12em;
+    margin-bottom: 20px;
+}
+#section article div:nth-of-type(3) img{
+    float: left;
+    width: 15em;
+    height: 12em;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: right;
+
+}
+
+#content > div:nth-of-type(1){
+    margin-top: 90px;
+    position: relative;
+    left: 700%;
+}
+#content > div:nth-of-type(2){
+    margin-top: 20px;
+    position: relative;
+    left: -700%;
+}
+#content > div:nth-of-type(3){
+    margin-top: 20px;
+    position: relative;
+    left: 700%;
+}
