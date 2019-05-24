@@ -8,8 +8,9 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.cycle2.js"></script>
     <script src="js/index.js"></script>
-    <link rel="stylesheet" href="css/index75.css" media="screen and (min-width:480px)">
-    <link rel="stylesheet" href="css/index100.css" media="screen and (min-width:874px)">
+    <link rel="stylesheet" href="css/index75.css" media="screen and (min-width:480px) and (max-width:873px)">
+    <link rel="stylesheet" href="css/index100.css" media="screen and (min-width:874px) and (max-width:1920px)">
+    <link rel="stylesheet" href="css/index30.css" media="screen and (max-width:479px)">
 
 </head>
 
@@ -34,6 +35,20 @@
                         </ul>
                     </nav>
                 </div>
+                <nav class="mhide">
+                    <ul>
+                        <li>메인 이미지</li>
+                        <li>
+                            <select name="msel" id="msel" class="mhide">
+                                <option value="1">Intro</option>
+                                <option value="2">Main</option>
+                                <option value="3">About</option>
+                                <option value="4">Support</option>
+                                <option value="5">Map</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
                 <div id="mslider">
                     <a href="#"><img src="img/icon.png" alt="아이콘"></a>
                     <div id="pnbtn">
@@ -44,11 +59,16 @@
             </div>
             <div id="cycle2move">
                 <div id="cycle2" class="cycle-slideshow" data-cycle-prev="#prev" data-cycle-next="#next">
+
                     <img src="img/sfef.png" alt="사진테스트">
+
+
+
                     <img src="img/fewgweg.png" alt="사진테스트2">
+
+
                 </div>
             </div>
-        </div>
 
     </header>
     <section id="section">
