@@ -6,9 +6,9 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/slide_banner.js"></script>
-    <link rel="stylesheet" href="css/menu.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slide_banner.js"></script>
+    <link rel="stylesheet" href="menu.css">
     <style>
         html {
             width: 100%;
@@ -40,7 +40,6 @@
         }
 
 
-        #wrap {}
 
         #brandVisual {
             position: relative;
@@ -50,6 +49,10 @@
             overflow: hidden;
             /*            height: 500px;*/
             /*            background: #8c908c;*/
+        }
+
+        #banner {
+            margin-top: 20px;
         }
 
         #brandVisual ul {
@@ -135,28 +138,101 @@
             height: 295px;
         }
 
-        .img:hover {
-            transform: scale(1.2);
-        }
+        /*    wrap2*/
+        #wrap2 {
 
-        /*     #brandAni {
-            width: 600px;
-            height: 600px;
+            width: 800px;
+            height: 800px;
             margin: 0 auto;
+
         }
 
-        #brandAni ul li {
-            display: inline-block;
-            list-style: none;
+        .flip-box {
+            background-color: transparent;
             width: 295px;
             height: 295px;
-            position: relative;
-            top: -601.5px;
-            right: -2px;
-            background-color: aqua;
-            opacity: 0.2;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            display: inline-block;
+        }
 
-        }*/
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-family: '궁서';
+            text-align: center;
+            position: relative;
+            top: 140px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-back {
+            background-color: #bbb;
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 50%;
+        }
+
+        #tail {
+            padding-left: 10px;
+            height: 300px;
+            background-color: #595959;
+        }
+
+        #tail ul {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #tail ul li {
+            padding-right: 25px;
+            padding-bottom: 10px;
+            position: relative;
+            top: 90px;
+        }
+
+        #tail ul li a {
+            font-size: 15px;
+            color: white;
+
+        }
+
+        #tail ul li a img {
+            width: 25px;
+            height: 25px;
+            border-radius: 0%;
+        }
+
+        #tail ul li a:hover {
+            text-decoration: underline;
+
+        }
 
     </style>
 </head>
@@ -221,37 +297,121 @@
                 <!----- Search Form Ends ---->
             </ul>
         </header>
-        <div id="brandVisual">
-            <ul>
-                <li class="visual_0"><a href="#">배너이미지 1</a></li>
-                <li class="visual_1"><a href="#">배너이미지 2</a></li>
-                <li class="visual_2"><a href="#">배너이미지 3</a></li>
+        <div id="banner">
+            <div id="brandVisual">
+                <ul>
+                    <li class="visual_0"><a href="#">배너이미지 1</a></li>
+                    <li class="visual_1"><a href="#">배너이미지 2</a></li>
+                    <li class="visual_2"><a href="#">배너이미지 3</a></li>
+                </ul>
+            </div>
+            <ul id="buttonList">
+                <li class="on"><a href="#">배너1</a></li>
+                <li><a href="#">배너2</a></li>
+                <li><a href="#">배너3</a></li>
             </ul>
         </div>
-        <ul id="buttonList">
-            <li class="on"><a href="#">배너1</a></li>
-            <li><a href="#">배너2</a></li>
-            <li><a href="#">배너3</a></li>
-        </ul>
-
-        <div id="brandHover">
-            <ul>
-                <li><a href="#"><img class="img" src="img/rr.webp"></a></li>
-                <li><a href="#"><img class="img" src="img/pt.jpg"></a></li>
-                <li><a href="#"><img class="img" src="img/ca.jpg"></a></li>
-                <li><a href="#"><img class="img" src="img/ti.jpg"></a></li>
-            </ul>
+        <div id="wrap2">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="#"><img src="img/rr.webp"></a>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>롤렉스</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="#"><img src="img/pt.jpg"></a>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>파텍필립</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="#"><img src="img/ca.jpg"></a>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>까르티에</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <a href="#"><img src="img/ti.jpg"></a>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>티쏘</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--   <div id="brandAni">
+        <!--        fooooooooooooooooooooooooooooooooooooooooooooooooooooooter-->
+        <footer id="tail">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>-->
+                <li><a href="#"><b>브랜드</b></a></li>
 
-        <footer>
+                <li><a href="#">롤렉스</a></li>
+                <li><a href="#">파텍필립</a></li>
+                <li><a href="#">까르티에</a></li>
+                <li><a href="#">티쏘</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><b>뭐시기</b></a></li>
+
+                <li><a href="#">여기는</a></li>
+                <li><a href="#">뭐일까요</a></li>
+                <li><a href="#">나도</a></li>
+                <li><a href="#">몰라용</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#"><b>고객센터</b></a></li>
+
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">1:1문의</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#"><b>마이페이지</b></a></li>
+
+                <li><a href="#">회원정보</a></li>
+                <li><a href="#">관심상품</a></li>
+                <li><a href="#">장바구니</a></li>
+            </ul>
+            <ul>
+
+                <li><a href="#"><b>온라인매장지원</b></a></li>
+
+                <li><a href="#">연락처</a></li>
+                <li><a href="#">이메일</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#"><b>팔로우하기</b></a></li>
+
+                <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="img/youtube.png" alt="youtube"></a></li>
+
+            </ul>
+
+
+
+
+
+
+
+
 
         </footer>
     </div>
