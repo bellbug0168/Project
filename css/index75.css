@@ -278,4 +278,11 @@ footer {
 #carousel img{
     width: 300px;
     height: 400px;
+    border-radius: 50%;
 }
+.menuimage img{
+    margin: 0 auto;
+    display: block;
+    background: no-repeat center center;
+}
+

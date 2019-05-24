@@ -438,7 +438,9 @@ $(function () {
                         break;
                     case 39:
                         console.log('right');
-                        if ($('#menu').hasClass('hide')) {
+                        if(!($('#section article:eq(2)').hasClass('hide'))){
+                            $('#Tomain').focus().addClass('Tomain');
+                        }else if($('#menu').hasClass('hide')) {
                             $('#mslider a:eq(0)').focus();
                             console.log('menu focus');
                         } else if ($('#mslider a:eq(0)').hasClass('keyhandler')) {
