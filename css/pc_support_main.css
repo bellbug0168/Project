@@ -178,10 +178,14 @@ nav ul li a:hover, nav ul li a:focus{
     background-size: 50%;
     width: 245px;
     height: 300px;
-    border: 1px solid;
+    border: 1px solid darkslateblue;
     position: relative;
     top: -508px;
     left: 100px;
+}
+
+.service_tel p{
+    margin-top: 10px
 }
 
 .service_tel h2{
@@ -198,12 +202,22 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service_tel_view{
+    display: none;
     width: 245px;
     height: 300px;
     position: absolute;
-    top: 625px;
-    left: 105px;
+    top: 0px;
     border: 1px solid;
+    background-color: darkslateblue;
+    opacity: 0.7;
+}
+
+.service_tel_view p{
+    margin-top: 240px;
+}
+
+.service_tel_view h2, .service_tel_view p{
+    color: white;
 }
 
 .service_email{
@@ -213,15 +227,51 @@ nav ul li a:hover, nav ul li a:focus{
     background-size: 50%;
     width: 245px;
     height: 300px;
-    border: 1px solid;
+    border: 1px solid #38610B;
     position: relative;
     top: -810px;
     left: 355px;
 }
 
+.service_email p{
+    margin-top: 10px
+}
+
+.service_email .email{
+    margin-left: -10px;
+}
+
 .service_email h2{
     margin-top: 200px;
     margin-left: 80px;
+}
+
+.service_email a{
+    color: black;
+    text-decoration: none;
+    margin-left: -80px;
+    padding: 0px 86px;
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
+
+.service_email_view{
+    display: none;
+    width: 245px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    border: 1px solid;
+    background-color: #38610B;
+    opacity: 0.6;
+}
+
+.service_email_view p{
+    margin-top: 240px;
+}
+
+.service_email_view h2, .service_email_view p{
+    color: white;
 }
 
 .service_FAQ{
@@ -255,4 +305,49 @@ nav ul li a:hover, nav ul li a:focus{
     color: black;
     text-decoration: underline;
 }
+
+h2:nth-child(2){
+    margin: 0px;
+}
+
+h2:nth-child(3){
+    margin: 0px;
+}
 /*메인 서비스 메뉴 끝*/
+/*푸터*/
+.footer{
+    width: 100%;
+    height: 100px;
+    border: 1px solid;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.footer .p1{
+    margin-left: 10px;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer .p2{
+    margin-left: 10px;
+    color: white;
+
+}
+
+.top p{
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a.top{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 90%;
+    bottom: 40px;
+    display: none;
+    background-color: dimgrey;
+}
