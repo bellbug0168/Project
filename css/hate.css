@@ -72,7 +72,8 @@ header .header_nav ul li {
 .bn > div:nth-child(2) {
     border: 1px solid transparent;
     height: 200px;
-    background-image: url('http://127.0.0.1:63845/img/jeremy-thomas-99326-unsplash.jpg');
+    background: url('http://127.0.0.1:63845/img/jeremy-thomas-99326-unsplash.jpg');
+
 }
 
 .main {
