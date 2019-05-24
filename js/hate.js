@@ -17,4 +17,6 @@ jQuery(document).ready(function ($) {
     $('.place').on('mouseout keydown', function() {
         $('.place').find('li').hide();
     });
+
+    // mouseover
 });

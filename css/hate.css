@@ -1,35 +1,31 @@
-.wrap {
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.wrap>div {
+.wrap {
+    margin: 0 auto;
+}
+
+.wrap > div {
     float: left;
 }
 
 #logo {
     width: 250px;
     height: 150px;
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 75px;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
-    border: 1px solid silver;
+    width: 30%;
     height: 300px;
     float: right;
-}
-
-header .place {
-    display: inline-block;
-    float: right;
-    width: 150px;
-}
-
-header .location {
-    display: inline-block;
-    float: right;
-    width: 150px;
 }
 
 header form {
@@ -38,30 +34,39 @@ header form {
     float: right;
 }
 
+header .location {
+    display: inline-block;
+    float: right;
+    width: 150px;
+}
+
+header .place {
+    display: inline-block;
+    float: right;
+    width: 150px;
+}
+
 header .header_nav {
     position: absolute;
     top: 100px;
 }
 
-header .header_nav ul li{
+header .header_nav ul li {
     display: inline-block;
-}
-
-section {
-    border: 1px solid transparent;
+    margin: 0 20px;
 }
 
 .bn div {
     height: 300px;
     width: 300px;
-    border: 1px solid silver;
+    border: 1px solid transparent;
     background-image: url("img/jeremy-thomas-99326-unsplash.jpg");
 }
 
-.wrap .main article {
+.wrap .main article ul li{
     position: relative;
     display: inline-block;
-    padding: 15px 5%;
+    padding: 20px 10%;
     max-width: 80px;
     margin: auto;
     border: 1px solid transparent;
