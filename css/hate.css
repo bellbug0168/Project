@@ -5,6 +5,7 @@
 
 .wrap {
     margin: 0 auto;
+    width: 1600px;
 }
 
 .wrap > div {
@@ -56,27 +57,84 @@ header .header_nav ul li {
     margin: 0 20px;
 }
 
-.bn div {
+.bn {
+    clear: both;
     height: 300px;
-    width: 300px;
+    width: 100%;
     border: 1px solid transparent;
-    background-image: url("img/jeremy-thomas-99326-unsplash.jpg");
 }
 
-.wrap .main article ul li{
+.bn > div:nth-child(1) {
+    border-top: 3px solid gold;
+    padding: 10px;
+}
+
+.bn > div:nth-child(2) {
+    border: 1px solid transparent;
+    height: 200px;
+    background-image: url('http://127.0.0.1:55439/img/jeremy-thomas-99326-unsplash.jpg');
+}
+
+.main {
+    padding: 10px;
+    border-top: 3px solid gold;
+}
+
+.main > div:nth-child(1) {
+    height: 200px;
+}
+
+.main > div > span:nth-child(1) {
+    border: 1px solid silver;
+    height: 50px;
+    margin: 10px;
+}
+
+.main > div > div:nth-child(2) {
+    border: 1px solid silver;
+    height: 50px;
+    margin: 10px;
+}
+
+.main > div > span:nth-child(3) {
+    border: 1px solid silver;
+    height: 50px;
+    margin: 10px;
+}
+
+.main > div > div:nth-child(4) {
+    border: 1px solid silver;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 30px;
+    float: right;
+}
+
+article {
+    border-top: 3px solid gold;
+}
+
+.wrap .main article ul li {
     position: relative;
     display: inline-block;
-    padding: 20px 10%;
+    padding: 15px 8%;
     max-width: 80px;
     margin: auto;
     border: 1px solid transparent;
-    text-align: center;
+
 }
 
 .wrap section article img {
     max-width: 215px;
 }
 
+article li {
+    align-content: center;
+}
+
 footer {
-    border: 1px solid transparent;
+    border: 1px solid silver;
+    height: 200px;
+    margin: 30px;
+
 }
