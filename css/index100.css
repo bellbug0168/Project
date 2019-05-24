@@ -12,6 +12,10 @@
     border: 5px double black;
 }
 
+.mhide{
+    display: none;
+}
+
 .bar{
     clear: both;
     width: 100%;
