@@ -197,6 +197,7 @@ hr{
 
 #section h1,
 h2 {
+    font-family: 'Satisfy','맑은 고딕', cursive;
     font-size: 3em;
     text-align: center;
     font-style: italic;
