@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.wrap > div {
+    float: left;
+}
+
+#logo {
+    width: 250px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 30%;
+    height: 300px;
+    float: right;
+}
+
+header form {
+    display: inline-block;
+    margin-right: 30px;
+    float: right;
+}
+
+header .location {
+    display: inline-block;
+    float: right;
+    width: 150px;
+}
+
+header .place {
+    display: inline-block;
+    float: right;
+    width: 150px;
+}
+
+header .header_nav {
+    position: absolute;
+    top: 100px;
+}
+
+header .header_nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.bn div {
+    height: 300px;
+    width: 300px;
+    border: 1px solid transparent;
+    background-image: url("img/jeremy-thomas-99326-unsplash.jpg");
+}
+
+.wrap .main article ul li{
+    position: relative;
+    display: inline-block;
+    padding: 20px 10%;
+    max-width: 80px;
+    margin: auto;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.wrap section article img {
+    max-width: 215px;
+}
+
+footer {
+    border: 1px solid transparent;
+}
