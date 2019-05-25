@@ -1,0 +1,280 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding-top: 40px;
+}
+
+/*스크롤기능*/
+.top p{
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a.top{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 90%;
+    bottom: 40px;
+    display: none;
+    background-color: dimgrey;
+}
+/*스크롤기능 끝*/
+
+@media ( min-width: 1024px ) {
+    .nav-up {
+        top: -60px;
+    }
+
+    .nav-down{
+        top: 0px;
+    }
+
+    .menu{
+    float: right;
+    margin-right: 50px;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .menu img{
+        display: none;
+    }
+
+    nav ul li{
+        padding: 20px 10px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav ul li a{
+        padding: 20px 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+@media ( max-width: 1023px ) {
+    .home li{
+        padding: 20px 10px;
+        list-style: none;
+    }
+
+    .home li a{
+        padding-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu{
+        position: relative;
+        margin-top: -20px;
+        width: 100%;
+        float: right;
+    }
+
+    .menu img{
+        float: right;
+        margin-top: -60px;
+        width: 60px;
+        z-index: 1;
+    }
+
+    .menu li{
+        margin-top: -20px;
+    }
+
+    .menu li a{
+        margin-top: 20px;
+        display: block;
+        padding-left: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: #f5b335;
+        border-top: 1px solid;
+
+    }
+}
+
+/*메인-메뉴*/
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #f5b335;
+    transition: top 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.home{
+    float: left;
+}
+
+.home img{
+    margin-top: -15px;
+    margin-left: -20px;
+    height: 50px;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+    text-decoration: underline;
+    color: white;
+}
+/*메인-메뉴 끝*/
+
+/*메인-베너*/
+.banner{
+    background-image: url(/img/texture-3319946_1920.jpg);
+    margin-top: -60px;
+    width: 100%;
+    height: 300px;
+}
+
+.banner h1{
+    padding: 110px 40px;
+    color: white;
+}
+/*메인-베너 끝*/
+
+/*상단 메시지*/
+.service .msg{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.service .msg{
+    text-align: center;
+}
+
+.service .msg h2{
+    color: #1F305D;
+}
+
+.service .msg .center li{
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid;
+    font-weight: 900;
+}
+
+.service .msg .center li a{
+    color: #1F305D;;
+    text-decoration: none;
+}
+
+.service .msg .center li p{
+    padding: 10px;
+}
+
+.service .msg .center li p:hover, .service .msg .center li p:focus{
+    color: white;
+}
+
+.service .msg .center li:hover, .service .msg .center li:focus{
+    background-color: #1F305D;
+}
+/*상단 메시지 끝*/
+
+/*품부분*/
+.frm{
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+    height: 100%;
+    background-color: #3333;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.frm h1{
+    padding-top: 30px;
+    padding-left: 10%;
+}
+
+.frm ul{
+    border-top: 1px solid;
+    margin-top: 30px;
+    padding-left: 10%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+}
+
+.frm ul p{
+    margin-left: 80%;
+}
+
+.frm ul li{
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+.frm ul li input{
+    font-size: 2em;
+    width: 50%;
+    height: 50px;
+}
+
+.frm ul li .text{
+    height: 500px;
+}
+
+.frm div{
+    margin-top: 20px;
+}
+
+.frm div p{
+    margin-top: 10px;
+}
+
+.frm div table{
+    margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.frm div p a{
+    color: #2C91EF;
+    text-decoration: none;
+}
+
+.frm div p a:hover{
+    text-decoration: underline;
+}
+
+.frm .ch{
+    margin-top: 10px;
+}
+
+.frm div a{
+    color: #1F305D;
+    text-decoration: none;
+}
+
+.frm div a p{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    width: 100px;
+    margin-left: 80%;
+    font-weight: 900;
+}
+
+.frm div a:hover, .frm div a p:hover{
+    color: white;
+    background-color: #1F305D;
+}
+/*품부분 끝*/

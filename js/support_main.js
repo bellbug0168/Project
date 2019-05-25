@@ -88,8 +88,7 @@ $(document).ready(function() {
             $('.service_email .email').show();
         });
         // 이메일 이벤트 끝
-
-        $('.menu li').show();
+            $('.menu li').show();
         }
 
 
