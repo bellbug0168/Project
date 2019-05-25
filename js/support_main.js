@@ -1,9 +1,13 @@
 $(document).ready(function() {
-    //스크롤 이동 시 메뉴 on/off
-    var didScroll;
-        var lastScrollTop = 0;
-        var delta = 100;
-        var navbarHeight = $('header').outerHeight();
+
+    // width가 1024 이상일떄
+    $(window).on('resize load', function(){
+        if($(window).width() > 1023) {
+            //스크롤 이동 시 메뉴 on/off
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 100;
+            var navbarHeight = $('header').outerHeight();
 
         $(window).scroll(function(event){
             didScroll = true;
@@ -21,6 +25,7 @@ $(document).ready(function() {
 
             if(Math.abs(lastScrollTop - st) <= delta)
                 return;
+
             if (st > lastScrollTop && st > navbarHeight){
                 $('nav').removeClass('nav-down').addClass('nav-up');
             } else {
@@ -28,9 +33,30 @@ $(document).ready(function() {
                     $('nav').removeClass('nav-up').addClass('nav-down');
                 }
             }
-            lastScrollTop = st;
+        lastScrollTop = st;
         }
-    //스크롤 기능 끝
+            $('.menu li').show();
+        //스크롤 기능 끝
+        }
+    });
+
+
+    // width가 1023이하 일때
+    $(window).on('resize load', function(){
+        if($(window).width() < 1024) {
+
+            $('.menu li').hide();
+
+            $('.menu img').on('click', function(){
+                    $('.menu ul').toggle();
+            });
+        }
+
+    });
+
+
+
+
     // 전화 이벤트
     $('.service_tel').on('mouseover', function(){
         $('.service_tel_view').show();
