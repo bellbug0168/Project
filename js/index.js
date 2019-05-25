@@ -153,6 +153,20 @@ $(function () {
                     $('#section article:eq(1)').stop().slideDown(1000).removeClass('hide');
                 }, 500);
 
+               $('#support > div img:eq(0)').fadeIn(500);
+                    $('#support > div img:eq(1)').fadeIn(1000);
+                    $('#support > div img:eq(2)').fadeIn(1500);
+                    $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                    },400);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                    },1000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                    },1500);
+
             })
             $('#menu li:eq(4)').on('click', function () {
                 $('#section article').not('.hide').stop().slideUp(500).addClass('hide');
@@ -342,11 +356,38 @@ $(function () {
                     setTimeout(function () {
                         $('#section article:eq(1)').stop().slideDown(1000).removeClass('hide');
                     }, 400);
+                    $('#support > div img:eq(0)').fadeIn(500);
+                    $('#support > div img:eq(1)').fadeIn(1000);
+                    $('#support > div img:eq(2)').fadeIn(1500);
+                    $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                    },500);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                    },1000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                    },1500);
+
                 } else {
                     $('#section article').not('.hide').stop().slideUp(500).addClass('hide');
                     setTimeout(function () {
                         $('#section article:eq(1)').stop().slideDown(1000).removeClass('hide');
                     }, 500);
+                    $('#support > div img:eq(0)').fadeIn(500);
+                    $('#support > div img:eq(1)').fadeIn(1000);
+                    $('#support > div img:eq(2)').fadeIn(1500);
+                    $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                    },400);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                    },1000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                    },1500);
                 }
             });
             $('#menu li:eq(4)').on('click', function () {
@@ -488,10 +529,25 @@ $(function () {
                         console.log("3");
                         $('#section article').eq(0).slideDown(1000);
                         break;
+
                     case "4":
                         console.log("4");
                         $('#section article').eq(1).slideDown(1000);
+                        $('#support > div img:eq(0)').fadeIn(500);
+                    $('#support > div img:eq(1)').fadeIn(1000);
+                    $('#support > div img:eq(2)').fadeIn(1500);
+                    $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                    },400);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                    },1000);
+                    setTimeout(function(){
+                        $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                    },1500);
                         break;
+
                     case "5":
                         $('#section article').eq(3).slideDown(1000);
                         break;
