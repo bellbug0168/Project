@@ -271,6 +271,7 @@ table, th, td {
     width: 100px;
     margin-left: 80%;
     font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .frm div a:hover, .frm div a p:hover{
