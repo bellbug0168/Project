@@ -66,11 +66,11 @@ body {
         float: right;
         margin-top: -60px;
         width: 60px;
+        z-index: 1;
     }
 
     .menu li{
         margin-top: -20px;
-
     }
 
     .menu li a{
@@ -86,7 +86,6 @@ body {
 
     }
 }
-
 
 /*메인-메뉴*/
 nav {
@@ -413,3 +412,4 @@ a.top{
     display: none;
     background-color: dimgrey;
 }
+/*푸터 끝*/
