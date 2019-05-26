@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Draggable popup</title>
+<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style type="text/css">
+    #popWindow {
+        position:absolute;
+        display:none;
+        background-color:#000000;
+        left:0;
+        top:0;
+        z-index: 200;
+    }
+
+    #closeBtn {
+        position:absolute;
+        width:24px;
+        z-index:1;
+        margin-left:-16px;
+        margin-top:-8px;
+    }
+
+    #popBottom {
+        height:28px;
+        text-align:left;
+        font-weight:bold;
+        color:#FFFFFF;
+        padding-left:10px;
+        padding-right:10px;
+    }
+</style>
+<script type="text/javascript">
+    $(function(){
+        popWindowOpen();
+    })
+    function popWindowOpen() {
+        jQuery("#popWindow").css("display", "block");
+        jQuery("#popWindow").draggable();
+    }
+
+    function popWindowClose() {
+        jQuery("#popWindow").css("display", "none");
+    }
+</script>
+</head>
+<body>
+<div >
+    <div id="popWindow">
+
+        <a href="javascript:;" onClick="">
+            <img src="img/event.jpg" style="position:static;"/>
+        </a>
+        <div id="popBottom">
+            <label>
+                <input type="checkbox" onClick="popWindowClose();">&nbsp;
+                닫기
+            </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

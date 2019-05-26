@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.selectric.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/selectric.css">
     <script src="js/jquery.cycle2.js"></script>
     <script src="js/index.js"></script>
@@ -22,6 +23,8 @@
 <body>
     <header>
         <div id="wrap">
+           <div id="loaded"></div>
+           <script>$("#loaded").load("/layered_popup.html");</script>
             <div id="cycle" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> a">
                 <a href="#"><img src="img/fist_picture.png" alt="시계1"></a>
                 <a href="#"><img src="img/second_picture.png" alt="시계2"></a>
