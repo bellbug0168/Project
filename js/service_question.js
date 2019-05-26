@@ -15,6 +15,19 @@ $(document).ready(function(){
     });
     // 스크롤 위로 끝
 
+    // 스크롤 센터정보로
+    $('.center1').click(function() {
+        var offset1 = $('.center_info').offset();
+	   $('html, body').animate({scrollTop:offset1.top-30},400);
+    });
+    // 스크롤 센터정보로 끝
+
+    // 스크롤 센터위치로
+    $('.center2').click(function() {
+        var offset2 = $('.center_location').offset();
+	   $('html, body').animate({scrollTop:offset2.top},400);
+    });
+    // 스크롤 센터위치로 끝
 
     // width가 1024 이상일떄
     $(window).on('resize load', function(){

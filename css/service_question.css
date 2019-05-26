@@ -89,6 +89,7 @@ a.top{
 
     .menu li{
         margin-top: -20px;
+        display: none;
     }
 
     .menu li a{
@@ -101,7 +102,6 @@ a.top{
         color: black;
         background-color: #f5b335;
         border-top: 1px solid;
-
     }
 }
 
@@ -279,3 +279,66 @@ table, th, td {
     background-color: #1F305D;
 }
 /*품부분 끝*/
+/*센터정보*/
+.center_info{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.center_info h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.center_info ul{
+    display: inline-block;
+    width: 23%;
+    margin-left: 1%;
+    list-style: none;
+    border: 1px solid;
+}
+/*센터정보 끝*/
+/*센터위치*/
+.center_location{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.center_location h1{
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 20px;
+}
+
+.center_location #map{
+    width: 100%;
+    height: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*센터위치 끝*/
+/*푸터*/
+.footer{
+    margin-top: 0px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.footer .p1{
+    margin-left: 10px;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer .p2{
+    margin-left: 10px;
+    color: white;
+
+}
+/*푸터 끝*/
