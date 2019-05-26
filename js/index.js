@@ -1,4 +1,5 @@
 $(function () {
+
      $("#carousel").flipster({
                 buttons:true,
                 style:'coverflow',
@@ -193,6 +194,9 @@ $(function () {
 
             })
         } else if (width >= 874) {
+            $("#popup1").load("/layered_popup.html");
+               $("#popup2").load("/layered_popup2.html");
+                $("#popup3").load("/layered_popup3.html");
             $('#mslider').children('a').on('click', function () {
 
                 if ($('#menu').hasClass('hide')) {

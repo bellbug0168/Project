@@ -17,14 +17,32 @@
     <link rel="stylesheet" href="css/index100.css" media="screen and (min-width:874px) and (max-width:1920px)">
     <link rel="stylesheet" href="css/index30.css" media="screen and (max-width:479px)">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-
+    <style>
+        #popup1{
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        #popup2{
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        #popup3{
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div id="wrap">
-           <div id="loaded"></div>
-           <script>$("#loaded").load("/layered_popup.html");</script>
+           <div id="popup1"></div>
+           <div id="popup2"></div>
+           <div id="popup3"></div>
+
             <div id="cycle" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> a">
                 <a href="#"><img src="img/fist_picture.png" alt="시계1"></a>
                 <a href="#"><img src="img/second_picture.png" alt="시계2"></a>
