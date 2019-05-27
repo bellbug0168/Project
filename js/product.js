@@ -41,4 +41,12 @@ jQuery(document).ready(function ($) {
     d.on('mouseout', function () {
         d.eq(0).css('transform', 'scale(1)');
     });
+
+    // focus, blur tab 시 배경색 변경
+    $('a').on('focus', function() {
+        $(this).css('background-color', 'chartreuse');
+    });
+    $('a').on('blur', function() {
+        $(this).css('background-color', 'white');
+    })
 });
