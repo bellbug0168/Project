@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='js/jquery-3.4.1.min.js'></script>
+    <script>
+        $(function(){
+            $('#mainMenu a').on('click', function(){
+                if($(this).parent().next('div').hasClass('hide')){
+                    var hid = $('#mainMenu a').parent().next('div').not('hide').slideUp(500);
+                    hid.addClass('hide');
+                    $(this).parent().next('div').slideDown(500);
+                    $(this).parent().next('div').removeClass('hide');
+                }else{
+                    $(this).parent().next('div').addClass('hide');
+                    $(this).parent().next('div').slideUp(500);
+                }
+
+            })
+        })
+    </script>
+    <style>
+        .hide{
+            display: none;
+        }
+
+        .smallMenu{
+            position: absolute;
+            width: 1600px;
+            height: 400px;
+            left: -800px;
+            border: 1px solid silver;
+        }
+
+        #mainMenu{
+            position: relative;
+            left: 900px;
+        }
+
+        #mainMenu li{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul id="mainMenu">
+        <li>
+            <h2><a href="#">메뉴1</a></h2>
+            <div class="smallMenu hide" style="background-color: red;">
+                <ul>
+                    <li>세부메뉴1</li>
+                    <li>세부메뉴2</li>
+                    <li>세부메뉴3</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h2><a href="#">메뉴2</a></h2>
+            <div class="smallMenu hide" style="background-color: blue;">
+                <ul>
+                    <li>세부메뉴1</li>
+                    <li>세부메뉴2</li>
+                    <li>세부메뉴3</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h2><a href="#">메뉴3</a></h2>
+            <div class="smallMenu hide" style="background-color: yellow;">
+                <ul>
+                    <li>세부메뉴1</li>
+                    <li>세부메뉴2</li>
+                    <li>세부메뉴3</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h2><a href="#">메뉴4</a></h2>
+            <div class="smallMenu hide" style="background-color: black;">
+                <ul>
+                    <li>세부메뉴1</li>
+                    <li>세부메뉴2</li>
+                    <li>세부메뉴3</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
