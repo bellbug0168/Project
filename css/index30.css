@@ -57,20 +57,31 @@ nav.mhide {
     top: 0;
     width: 100%;
     box-sizing: border-box;
+    background-color:goldenrod;
 }
 
 .mhide ul {
-    background-color:goldenrod;
     padding: 10px;
-    text-align: center;
     box-sizing: border-box;
 }
 
-.mhide li {
+.mhide li{
+    list-style: none;
+}
+
+.mhide li:first-of-type {
     display: inline-block;
     width: 150px;
-    margin-right: 20px;;
+    margin-left: 10%;
+    margin-top: 5%;
     box-sizing: border-box;
+    float: left;
+}
+
+.mhide li:nth-of-type(2){
+    float:left;
+    position: relative;
+    right: -10%;
 }
 
 .mhide li a {
@@ -82,6 +93,7 @@ nav.mhide {
     color:gold;
     position: relative;
     top: -10px;
+    font-size: 1.5em;
 }
 
 #cycle2move {
@@ -108,7 +120,6 @@ nav.mhide {
 
 #section article ul {
     font-size: 20px;
-
 }
 
 #section li {
