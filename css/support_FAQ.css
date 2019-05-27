@@ -156,11 +156,18 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .list_menu a{
-    cursor: pointer;
+    color: firebrick;
+    display: block;
+    text-decoration: none;
 }
 
 .list_menu .hide{
     display: none;
+}
+
+.list_menu a:hover, .list_menu a:focus{
+    color: white;
+    background-color: firebrick;
 }
 /*리스트 끝*/
 
