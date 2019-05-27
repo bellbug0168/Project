@@ -16,13 +16,13 @@
     font-family: 'Black Han Sans', sans-serif;
 }
 
-#map ~ div li:first-of-type{
+#map ~ div li:first-of-type {
     list-style: none;
     font-size: 1.1em;
 }
 
-#map~div span{
-    color:darkblue;
+#map ~ div span {
+    color: darkblue;
 }
 
 .mhide {
@@ -431,31 +431,31 @@ footer {
     color: white;
 }
 
-#maincontent > p{
-    color:darkblue;
+#maincontent > p {
+    color: darkblue;
     font-weight: 800;
     font-style: italic;
     font-variant: small-caps;
 }
 
-#maincontent a{
+#maincontent a {
     text-decoration: none;
 }
 
-#maincontent a p{
+#maincontent a p {
     color: brown;
     margin: 10px;
 }
 
-#maincontent a p:hover{
+#maincontent a p:hover {
     color: goldenrod;
 }
 
-#supportSite{
+#supportSite {
     font-weight: 800;
     font-style: italic;
 }
 
-#address{
+#address {
     font-weight: 800;
 }
