@@ -15,7 +15,7 @@ body {
     width: 1600px;
 }
 
-.wrap ul li{
+.wrap ul li {
     list-style: none;
 }
 
@@ -86,9 +86,16 @@ header .header_nav ul li {
     margin-right: 50px;
 }
 
+.header_nav>ul>li>div {
+    border: 1px solid transparent;
+    background-color: gold;
+    position: absolute;
+
+}
+
 .bn {
     clear: both;
-    height: 300px;
+    height: 400px;
     width: 100%;
     border: 1px solid transparent;
 }
@@ -102,14 +109,14 @@ header .header_nav ul li {
 
 .bn > div:nth-child(2) {
     border: 1px solid transparent;
-    height: 200px;
-    background: url('http://127.0.0.1:49233/css/hunters-race-408759-unsplash.jpg');
+    height: 350px;
+    background-image: url('http://127.0.0.1:49233/img/hunters-race-408759-unsplash.jpg');
     background-size: cover;
-
+    background-position: center;
 }
 
 .main {
-    padding: 10px;
+    margin-top: 20px;
     border-top: 3px solid gold;
 }
 
@@ -185,29 +192,30 @@ footer {
     display: inline-block;
 }
 
-footer>div>ul>:not(li) {
-    font-weight: 900;
-    font-size: 2em;
-}
-
-footer>div ul {
+footer > div ul {
     display: inline-block;
-    position:absolute;
+    position: absolute;
 }
 
-footer>div>ul li {
+footer > div ul > li:nth-child(1) {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+footer > div > ul li {
     left: 10%;
 }
 
-footer>div>ul:nth-child(2) {
+footer > div > ul:nth-child(2) {
     left: 40%;
 }
 
-footer>div>ul:nth-child(3) {
+footer > div > ul:nth-child(3) {
     left: 52%;
 }
 
-footer>div>ul:nth-child(4) {
+footer > div > ul:nth-child(4) {
     left: 67%;
 }
 
