@@ -334,13 +334,6 @@ table, th, td {
 }
 
 .frm div a p{
-    color: #1F305D;
-    text-decoration: none;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.frm div a p{
     text-align: center;
     border: 1px solid;
     padding: 10px;
@@ -353,6 +346,11 @@ table, th, td {
     background-color: #1F305D;
 }
 
+.frm .btn{
+    color: #1F305D;
+    text-decoration: none;
+    display: block;
+}
 /*품부분 끝*/
 
 /*센터위치*/
