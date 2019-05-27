@@ -59,9 +59,50 @@ a.top{
         color: black;
     }
 
+
+    /*센터정보*/
+    .center_info{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .center_info h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .center_info ul{
+        display: inline-block;
+        width: 23%;
+        margin-left: 1%;
+        list-style: none;
+        border: 1px solid;
+    }
+    /*센터정보 끝*/
+
+
+    .frm ul p{
+        margin-left: 80%;
+    }
+
+    .frm ul li input{
+        font-size: 2em;
+        width: 60%;
+        height: 50px;
+    }
+
 }
 
 @media ( max-width: 1023px ) {
+    .nav-up {
+        top: -60px;
+    }
+
+    .nav-down{
+        top: 0px;
+    }
     .home li{
         padding: 20px 10px;
         list-style: none;
@@ -102,6 +143,41 @@ a.top{
         color: black;
         background-color: #f5b335;
         border-top: 1px solid;
+    }
+
+    /*센터정보*/
+    .center_info{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .center_info h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .center_info ul{
+        display: inline-block;
+        width: 100%;
+        margin-left: 1%;
+        list-style: none;
+        border: 1px solid;
+        text-align: center;
+        margin-top: 3px;
+    }
+    /*센터정보 끝*/
+
+
+    .frm ul p{
+        margin-left: 65%;
+    }
+
+    .frm ul li input{
+        font-size: 2em;
+        width: 90%;
+        height: 50px;
     }
 }
 
@@ -171,6 +247,7 @@ nav ul li a:hover, nav ul li a:focus{
 .service .msg .center li a{
     color: #1F305D;;
     text-decoration: none;
+    display: inline-block;
 }
 
 .service .msg .center li p{
@@ -182,6 +259,11 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service .msg .center li:hover, .service .msg .center li:focus{
+    background-color: #1F305D;
+}
+
+.service .msg .center li a:focus{
+    color: white;
     background-color: #1F305D;
 }
 /*상단 메시지 끝*/
@@ -210,20 +292,10 @@ nav ul li a:hover, nav ul li a:focus{
     border-bottom: 1px solid;
 }
 
-.frm ul p{
-    margin-left: 80%;
-}
-
 .frm ul li{
     list-style: none;
     margin-top: 10px;
 
-}
-
-.frm ul li input{
-    font-size: 2em;
-    width: 50%;
-    height: 50px;
 }
 
 .frm ul li .text{
@@ -232,6 +304,8 @@ nav ul li a:hover, nav ul li a:focus{
 
 .frm div{
     margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .frm div p{
@@ -259,47 +333,28 @@ table, th, td {
     margin-top: 10px;
 }
 
-.frm div a{
+.frm div a p{
     color: #1F305D;
     text-decoration: none;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .frm div a p{
     text-align: center;
     border: 1px solid;
     padding: 10px;
-    width: 100px;
-    margin-left: 80%;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
-.frm div a:hover, .frm div a p:hover{
+.frm div a:hover, .frm div a p:hover, .frm div a:focus{
     color: white;
     background-color: #1F305D;
 }
+
 /*품부분 끝*/
-/*센터정보*/
-.center_info{
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
-.center_info h1{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-
-.center_info ul{
-    display: inline-block;
-    width: 23%;
-    margin-left: 1%;
-    list-style: none;
-    border: 1px solid;
-}
-/*센터정보 끝*/
 /*센터위치*/
 .center_location{
     margin-left: 10%;
