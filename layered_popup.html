@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Draggable popup</title>
 <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<style type="text/css">
+<style>
     #popWindow {
         position:absolute;
         display:none;
@@ -31,9 +32,12 @@
         padding-right:10px;
     }
 </style>
-<script type="text/javascript">
+<script>
     $(function(){
         popWindowOpen();
+        $('#popBottom label input').on('click focus', function(){
+            popWindowClose();
+        })
     })
     function popWindowOpen() {
         jQuery("#popWindow").css("display", "block");
@@ -49,12 +53,12 @@
 <div >
     <div id="popWindow">
 
-        <a href="javascript:;" onClick="">
+        <a href="javascript:;">
             <img src="img/event.jpg" style="position:static;" alt="광고이미지1"/>
         </a>
         <div id="popBottom">
             <label>
-                <input type="checkbox" onClick="popWindowClose();">&nbsp;
+                <input type="checkbox">&nbsp;
                 닫기
             </label>
         </div>
