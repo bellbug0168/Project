@@ -6,6 +6,7 @@
 h1,h2{
     font-family: 'Satisfy', cursive;
     margin-bottom: 20px;
+    text-shadow: 4px 3px silver;
 }
 
 body {
@@ -108,7 +109,7 @@ nav.mhide {
     top: 4em;
     width: 100%;
     height: auto;
-    border: 7px double black;
+    border: 7px double white;
     padding: 30px;
     background-image: url(/img/backgroundimage.png);
     z-index: 100;
@@ -133,6 +134,21 @@ nav.mhide {
 
 #map {
     height: 500px;
+}
+
+#map~div ul{
+    font-size: 1em;
+    font-family: 'Black Han Sans', sans-serif;
+    margin: 20px;
+    line-height: 30px;
+}
+
+#map~div span{
+    color:darkblue;
+}
+
+#map~div ul li:first-of-type{
+    list-style:square;
 }
 
 #carousel{
@@ -185,7 +201,8 @@ nav.mhide {
 
 #support > div > div:nth-of-type(2){
     width: 90%;
-    height: 150px;
+    height: auto;
+    padding: 10px;
     border: 5px inset;
     border-radius: 6%;
     background-color: floralwhite;
@@ -194,12 +211,52 @@ nav.mhide {
 #support > div > div > ul{
     margin: 0 4%;
 }
-#support > div > div > ul a{
+#support a{
     text-decoration: none;
     color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-weight: 800;
 }
 
-#support > div > div > ul a:hover,#support > div > div > ul a:focus{
+#support a:hover{
+    color:gold;
     text-decoration: none;
-    color: white;
 }
+
+#support a:focus{
+    color:gold;
+    text-decoration: none;
+}
+
+#maincontent > p{
+    color:darkblue;
+    font-weight: 800;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#maincontent a{
+    text-decoration: none;
+}
+
+#maincontent a p{
+    color: brown;
+    margin: 10px;
+}
+
+#maincontent a p:hover{
+    color: goldenrod;
+}
+
+#supportSite{
+    font-weight: 800;
+    font-style: italic;
+}
+
+#address{
+    font-weight: 800;
+}
+
+

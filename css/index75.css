@@ -12,6 +12,20 @@
     border: 5px double black;
 }
 
+#map ~ div {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+#map ~ div li:first-of-type{
+    list-style: none;
+    font-size: 1.1em;
+}
+
+#map~div span{
+    color:darkblue;
+}
+
+
 .bar {
     clear: both;
     width: 100%;
@@ -213,7 +227,7 @@ h2 {
 #section ul {
     font-size: 1.5em;
     list-style-image: url(/img/li_tit_style.gif);
-    margin-left: 4em;
+    margin-left: 1em;
     margin-top: 0.5em;
 
 }
@@ -368,22 +382,55 @@ footer {
 
 #support > div > div:nth-of-type(2){
     width: 90%;
-    height: 150px;
+    height: auto;
+    padding: 10px;
     border: 5px inset;
     border-radius: 6%;
     display: none;
     background-color: floralwhite;
     opacity: 0.8;
+    font-weight: 800;
 }
 #support > div > div > ul{
     margin: 0 4%;
 }
-#support > div > div > ul a{
+#support a{
     text-decoration: none;
     color: black;
 }
 
-#support > div > div > ul a:hover,#support > div > div > ul a:focus{
+#support a:hover,#support a:focus{
     text-decoration: none;
-    color: white;
+    color: goldenrod;
 }
+
+#maincontent > p{
+    color:darkblue;
+    font-weight: 800;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#maincontent a{
+    text-decoration: none;
+}
+
+#maincontent a p{
+    color: brown;
+    margin: 10px;
+}
+
+#maincontent a p:hover{
+    color: goldenrod;
+}
+
+#supportSite{
+    font-weight: 800;
+    font-style: italic;
+}
+
+#address{
+    font-weight: 800;
+}
+
+

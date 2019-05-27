@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro</title>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.selectric.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -145,7 +145,7 @@
                         <p>관련 사이트</p>
                     </div>
                     <div>
-                        <ul>
+                        <ul id="supportSite">
                             <li><a href="https://www.jaeger-lecoultre.com
  ">https://www.jaeger-lecoultre.com
                                 </a></li>
@@ -160,7 +160,12 @@
                     <div>
                         <p>연락처 및 주소</p>
                     </div>
-                    <div></div>
+                    <div id="address">
+                        <ul>
+                            <li>서울 종로구 종로 69 YMCA빌딩 7층, 3호</li>
+                            <li>032) 930-7066~7</li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <img src="img/tag3.jpg" alt="이미지태그3">
@@ -168,7 +173,10 @@
                         <p>To. 고객센터</p>
                     </div>
                     <div>
-                        <a href="support_main.html">Go to Support main</a>
+                        <p style="color:darkblue; font-size: 18px; font-weight: 800; text-indent: 12px">더 많은 정보를 원하신다면 고객 센터를 방문하십시오.</p>
+                        <br>
+                        <a href="support_main.html" style="margin-left: 15px; font-weight: 800;">
+                        Go to Support main</a>
                     </div>
                 </div>
             </div>
@@ -203,7 +211,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div id="maincontent">
                     <p>Want to see more products?</p>
                     <a href="menu.html" id="Tomain">
                         <p>Go to Main page...</p>
@@ -220,7 +228,7 @@
         </article>
 
         <article class="hide">
-            <h2>오시는 길</h2>
+            <h2>Directions</h2>
             <div id="map"></div>
             <script>
                 var map;
@@ -246,12 +254,12 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_2MNS8xHNWrpwOHTzACMw01LUdl-KjP4&callback=initMap" async defer></script>
             <div>
                 <ul>
-                    <li>주소 및 연락처</li>
-                    <li>서울 종로구 종로 69 YMCA빌딩 7층, 3호</li>
-                    <li>032) 930-7066~7</li>
+                    <li>오시는 길</li>
+                    <li>주변 지하철 역 : <span>1호선(종각), 5호선(종로3가), 2호선(을지로 입구), 3호선(종로3가)</span></li>
+                    <li>주변 버스정류장 : <span>종각역YMCA(01-683), 종로2가(01-013), 종로2가(01-766),종로2가(01-014)</span></li>
                 </ul>
             </div>
-            <div class="bar"></div>
+            <hr>
             <footer>
                 <div>
                     <address>CopyLight by Yun Geonil</address>
