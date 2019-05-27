@@ -230,28 +230,76 @@ h2 {
 
 #content div:first-of-type img {
     float: left;
-    width: 15em;
+    width: 41%;
     height: 12em;
     margin-bottom: 20px;
+    margin-right: 10px;
+    border: 5px solid white;
+    box-shadow: 5px 5px silver;
+}
+
+#content div:first-of-type > h3{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2em;
+    color: darkblue;
+}
+
+#content div:first-of-type > p{
+    font-size: 1.2em;
+    width: 90%;
+    position: relative;
+    left: 3%;
+    font-family: 'Jua', sans-serif;
 }
 
 #content div:nth-of-type(2) img {
     float: right;
-    width: 15em;
+    width: 41%;
     height: 12em;
     margin-bottom: 20px;
+    margin-left: 10px;
+    border: 5px solid white;
+    box-shadow: 5px 5px silver;
+}
+
+#content div:nth-of-type(2) > h3{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2em;
+    color: darkblue;
+}
+
+#content div:nth-of-type(2) > p{
+    font-size: 1.2em;
+    width: 50%;
+    position: relative;
+    font-family: 'Jua', sans-serif;
 }
 
 #content div:nth-of-type(3) img {
     float: left;
-    width: 15em;
+    width: 41%;
     height: 12em;
     margin-bottom: 20px;
+    margin-right: 10px;
+    border: 5px solid white;
+    box-shadow: 5px 5px silver;
+}
+
+#content div:nth-of-type(3) > h3{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2em;
+    color: darkblue;
+}
+
+#content div:nth-of-type(3) > p{
+    font-size: 1.2em;
+    width: 95%;
+    font-family: 'Yeon Sung', cursive;
+    font-family: 'Jua', sans-serif;
 }
 
 footer {
     text-align: right;
-
 }
 
 #content > div:nth-of-type(1) {
