@@ -12,6 +12,10 @@
     border: 5px double black;
 }
 
+#map ~ div{
+    font-family: 'Black Han Sans', sans-serif;
+}
+
 .mhide {
     display: none;
 }
@@ -80,6 +84,7 @@ body {
 #menu li {
     list-style: none;
     font-size: 30px;
+    font-weight:bold;
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
