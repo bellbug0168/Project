@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding-top: 40px;
+}
+
+@media ( min-width: 1024px ) {
+    .nav-up {
+        top: -60px;
+    }
+
+    .nav-down{
+        top: 0px;
+    }
+
+    .menu{
+    float: right;
+    margin-right: 50px;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .menu img{
+        display: none;
+    }
+
+    nav ul li{
+        padding: 20px 10px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav ul li a{
+        padding: 20px 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+@media ( max-width: 1023px ) {
+    .nav-up {
+        top: -60px;
+    }
+
+    .nav-down{
+        top: 0px;
+    }
+    .home li{
+        padding: 20px 10px;
+        list-style: none;
+    }
+
+    .home li a{
+        padding-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu{
+        position: relative;
+        margin-top: -20px;
+        width: 100%;
+        float: right;
+    }
+
+    .menu img{
+        float: right;
+        margin-top: -60px;
+        width: 60px;
+        z-index: 1;
+    }
+
+    .menu li{
+        margin-top: -20px;
+    }
+
+    .menu li a{
+        margin-top: 20px;
+        display: block;
+        padding-left: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: #f5b335;
+        border-top: 1px solid;
+
+    }
+}
+
+/*메인-메뉴*/
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #f5b335;
+    transition: top 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.home{
+    float: left;
+}
+
+.home img{
+    margin-top: -15px;
+    margin-left: -20px;
+    height: 50px;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+    text-decoration: underline;
+    color: white;
+}
+/*메인-메뉴 끝*/
+
+/*메인-베너*/
+.banner{
+    background-image: url(/img/texture-3319946_1920.jpg);
+    margin-top: -60px;
+    width: 100%;
+    height: 300px;
+}
+
+.banner h1{
+    padding: 110px 40px;
+    color: white;
+}
+/*메인-베너 끝*/
+
+/*리스트*/
+.list{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.list_menu{
+    list-style: none;
+    border: 1px solid;
+    margin: 3px;
+
+}
+
+.list_menu ul{
+    list-style: none;
+    border-top: 1px solid;
+    height: 130px;
+    font-size: 1.2em;
+}
+
+.list_menu a{
+    cursor: pointer;
+}
+
+.list_menu .hide{
+    display: none;
+}
+/*리스트 끝*/
+
+/*푸터*/
+.footer{
+    width: 100%;
+    height: 100px;
+    border: 1px solid;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer .p1{
+    margin-left: 10px;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer .p2{
+    margin-left: 10px;
+    color: white;
+
+}
+
+.top p{
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a.top{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 90%;
+    bottom: 40px;
+    display: none;
+    background-color: dimgrey;
+}
+/*푸터 끝*/

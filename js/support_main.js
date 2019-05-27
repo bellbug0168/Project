@@ -108,18 +108,6 @@ $(document).ready(function() {
     });
 
 
-    // width가 768이하 일때
-    $(window).on('resize load', function(){
-        if($(window).width() < 768) {
-
-        }
-    });
-
-
-
-
-
-
     // 스크롤 위로
     $(window).scroll(function() {
 	   if ($(this).scrollTop() > 120 ){
