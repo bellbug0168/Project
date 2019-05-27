@@ -247,6 +247,7 @@ nav ul li a:hover, nav ul li a:focus{
 .service .msg .center li a{
     color: #1F305D;;
     text-decoration: none;
+    display: inline-block;
 }
 
 .service .msg .center li p{
@@ -258,6 +259,11 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service .msg .center li:hover, .service .msg .center li:focus{
+    background-color: #1F305D;
+}
+
+.service .msg .center li a:focus{
+    color: white;
     background-color: #1F305D;
 }
 /*상단 메시지 끝*/
@@ -346,6 +352,7 @@ table, th, td {
     color: white;
     background-color: #1F305D;
 }
+
 /*품부분 끝*/
 
 /*센터위치*/
