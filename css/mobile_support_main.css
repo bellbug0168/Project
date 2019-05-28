@@ -8,6 +8,14 @@ body {
 }
 
 /*메인-메뉴*/
+.nav-up {
+        top: -60px;
+    }
+
+.nav-down{
+    top: 0px;
+}
+
 nav {
     position:fixed;
     top: 0;

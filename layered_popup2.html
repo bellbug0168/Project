@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Draggable popup2</title>
+<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+    #popWindow2 {
+        position:absolute;
+        display:none;
+        background-color:#000000;
+        left:400px;
+        top:0px;
+        z-index: 200;
+    }
+
+    #closeBtn2 {
+        position:absolute;
+        width:24px;
+        z-index:1;
+        margin-left:-16px;
+        margin-top:-8px;
+    }
+
+    #popBottom2 {
+        height:28px;
+        text-align:left;
+        font-weight:bold;
+        color:#FFFFFF;
+        padding-left:10px;
+        padding-right:10px;
+    }
+</style>
+<script>
+    $(function(){
+        popWindowOpen2();
+        $('#popBottom2 label input').on('click focus', function(){
+            popWindowClose2();
+        })
+    })
+    function popWindowOpen2() {
+        jQuery("#popWindow2").css("display", "block");
+        jQuery("#popWindow2").draggable();
+    }
+
+    function popWindowClose2() {
+        jQuery("#popWindow2").css("display", "none");
+    }
+</script>
+</head>
+<body>
+<div >
+    <div id="popWindow2">
+
+        <a href="javascript:;">
+            <img src="img/event2.jpg" style="position:static;" alt="광고이미지2"/>
+        </a>
+        <div id="popBottom2">
+            <label>
+                <input type="checkbox">&nbsp;
+                닫기
+            </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

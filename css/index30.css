@@ -3,9 +3,11 @@
     padding: 0;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Satisfy', cursive;
     margin-bottom: 20px;
+    text-shadow: 4px 3px silver;
 }
 
 body {
@@ -57,20 +59,31 @@ nav.mhide {
     top: 0;
     width: 100%;
     box-sizing: border-box;
+    background-color: goldenrod;
 }
 
 .mhide ul {
-    background-color:goldenrod;
     padding: 10px;
-    text-align: center;
     box-sizing: border-box;
 }
 
 .mhide li {
+    list-style: none;
+}
+
+.mhide li:first-of-type {
     display: inline-block;
     width: 150px;
-    margin-right: 20px;;
+    margin-left: 10%;
+    margin-top: 5%;
     box-sizing: border-box;
+    float: left;
+}
+
+.mhide li:nth-of-type(2) {
+    float: left;
+    position: relative;
+    right: -10%;
 }
 
 .mhide li a {
@@ -78,10 +91,11 @@ nav.mhide {
     font-weight: 800;
 }
 
-.mhide ul li h2{
-    color:gold;
+.mhide ul li h2 {
+    color: gold;
     position: relative;
     top: -10px;
+    font-size: 1.5em;
 }
 
 #cycle2move {
@@ -96,7 +110,7 @@ nav.mhide {
     top: 4em;
     width: 100%;
     height: auto;
-    border: 7px double black;
+    border: 7px double white;
     padding: 30px;
     background-image: url(/img/backgroundimage.png);
     z-index: 100;
@@ -108,7 +122,6 @@ nav.mhide {
 
 #section article ul {
     font-size: 20px;
-
 }
 
 #section li {
@@ -124,34 +137,49 @@ nav.mhide {
     height: 500px;
 }
 
-#carousel{
+#map ~ div ul {
+    font-size: 1em;
+    font-family: 'Black Han Sans', sans-serif;
+    margin: 20px;
+    line-height: 30px;
+}
+
+#map ~ div span {
+    color: darkblue;
+}
+
+#map ~ div ul li:first-of-type {
+    list-style: square;
+}
+
+#carousel {
     height: 400px;
 }
 
-#carousel img{
+#carousel img {
     width: 200px;
     height: 300px;
     border-radius: 50%;
 }
 
-.menuimage img{
+.menuimage img {
     display: none;
 }
 
-#support img{
+#support img {
     width: 90%;
     height: 50px;
     box-shadow: 10px 8px silver;
     display: none;
 }
 
-#support > div{
+#support > div {
     position: relative;
     margin: 4% 0;
     left: 5%;
 }
 
-#support > div > div:nth-of-type(1){
+#support > div > div:nth-of-type(1) {
     position: absolute;
     text-align: right;
     color: white;
@@ -159,7 +187,7 @@ nav.mhide {
     font-size: 1.5em;
     width: 90%;
     height: 50px;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 20;
     background-color: black;
@@ -167,28 +195,69 @@ nav.mhide {
     display: none;
 }
 
-#support > div > div:nth-of-type(1) p{
+#support > div > div:nth-of-type(1) p {
     padding-top: 5px;
     padding-right: 5%;
 }
 
-#support > div > div:nth-of-type(2){
+#support > div > div:nth-of-type(2) {
     width: 90%;
-    height: 150px;
+    height: auto;
+    padding: 10px;
     border: 5px inset;
     border-radius: 6%;
     background-color: floralwhite;
     display: none;
 }
-#support > div > div > ul{
+
+#support > div > div > ul {
     margin: 0 4%;
 }
-#support > div > div > ul a{
+
+#support a {
     text-decoration: none;
     color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-weight: 800;
 }
 
-#support > div > div > ul a:hover,#support > div > div > ul a:focus{
+#support a:hover {
+    color: gold;
     text-decoration: none;
-    color: white;
+}
+
+#support a:focus {
+    color: gold;
+    text-decoration: none;
+}
+
+#maincontent > p {
+    color: darkblue;
+    font-weight: 800;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#maincontent a {
+    text-decoration: none;
+}
+
+#maincontent a p {
+    color: brown;
+    margin: 10px;
+}
+
+#maincontent a p:hover {
+    color: goldenrod;
+}
+
+#supportSite {
+    font-weight: 800;
+    font-style: italic;
+}
+
+#address {
+    font-weight: 800;
 }
