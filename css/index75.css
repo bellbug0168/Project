@@ -25,6 +25,18 @@
     color: green;
 }
 
+.watch {
+    font-family: 'Black Han Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    right: 8%;
+    font-size: 2em;
+    border: 10px solid white;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
 
 .bar {
     clear: both;

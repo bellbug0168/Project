@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+.watch {
+    font-family: 'Black Han Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    top: -10%;
+    height: 80px;
+    font-size: 2em;
+    border: 10px solid white;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
 h1,
 h2 {
     font-family: 'Satisfy', cursive;
@@ -136,13 +149,13 @@ nav.mhide {
     box-shadow: 3px 3px silver;
 }
 
-#content h3{
-    color:lightcoral;
+#content h3 {
+    color: lightcoral;
     margin: 10px 0;
     font-weight: 700;
 }
 
-#content p{
+#content p {
     font-weight: 500;
     font-size: 0.9em;
     margin-bottom: 10px;
