@@ -148,7 +148,8 @@ nav ul li a:hover, nav ul li a:focus{
 /*리스트*/
 .tab{
     position: relative;
-    height: 1000px;
+    top: 30px;
+    height: 650px;
 }
 
 .tab>li{
@@ -156,6 +157,7 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 ul h2{
+    text-align: center;
     border: 1px solid;
     float: left;
     width: 150px;
@@ -166,7 +168,7 @@ ul h2{
     position: absolute;
     top: 60px;
     width: 100%;
-    height: 1000px;
+    height: 600px;
     border: 1px solid;
     background-color: white;
 }

@@ -48,6 +48,7 @@ $(document).ready(function(){
     });
     // 스크롤 위로 끝
     // 리스트 메뉴
+
     $('.tab>li').find('ul').hide();
     $('.tab>li:eq(0)').find('h2').next().show().css('background-color', 'white');
 
