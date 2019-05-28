@@ -1,5 +1,11 @@
+*{
+     text-decoration-line: none;
+    color: black;
+}
+
 #wrap {
     font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 #logo a {
@@ -12,7 +18,12 @@
 #nav ul li {
     list-style: none;
     display: inline-block;
+    padding-left: 50px;
 }
+#nav ul li a:hover{
+   color: gold;
+}
+
 #product tr td img{
     width: 300px;
 }
@@ -32,6 +43,10 @@ th {
     background-color: azure;
 }
 
+#side{
+    border: 1px solid silver;
+    width: 100%;
+}
 #delivery ul li {
     list-style: none;
     padding-bottom: 20px;

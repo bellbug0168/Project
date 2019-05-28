@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 10px 10px;
+    text-decoration-line: none;
+    color: black;
 }
 
 #wrap {
@@ -9,6 +11,7 @@
     border-left: 1px solid;
     border-right: 1px solid;
     font-family: 'Nanum Gothic', sans-serif;
+    background-color: cornsilk;
 }
 
 #logo a {
@@ -23,7 +26,11 @@
     display: inline-block;
     position: relative;
     left: 70%;
-    margin-right: 30px;
+
+}
+
+#nav ul li a:hover{
+   color: gold;
 }
 
 header {
