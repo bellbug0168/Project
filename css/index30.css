@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+.bar {
+    clear: both;
+    width: 100%;
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+}
+
 .watch {
     font-family: 'Black Han Sans', sans-serif;
     position: relative;
@@ -157,9 +164,14 @@ nav.mhide {
 }
 
 #content p {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 0.9em;
     margin-bottom: 10px;
+    border: 1px dotted silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: floralwhite;
 }
 
 #map {
@@ -275,6 +287,7 @@ nav.mhide {
 
 #maincontent a p {
     color: brown;
+    font-weight: 800;
     margin: 10px;
 }
 

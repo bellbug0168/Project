@@ -377,6 +377,7 @@ footer {
     margin: 0 auto;
     display: block;
     background: no-repeat center center;
+    border-radius: 0 0 50px 50px;
 }
 
 #carousel img {
