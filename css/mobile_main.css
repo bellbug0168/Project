@@ -1,0 +1,128 @@
+#logo {
+    font-family: 'Satisfy', cursive;
+     font-size: 5em;
+     color: gold;
+     text-align: center;
+
+}
+.nav a:link{
+    position: relative;
+    left: 40px
+}
+.nav>li input{
+    position: relative;
+    left: 10px;
+
+}
+
+#content a{
+    position: relative;
+    left: 0px;
+}
+.center{
+  display: none;
+}
+
+#wowslider{
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
+ /*    filpnav*/
+ #filpnav {
+     width: 90%;
+     height: 900px;
+     margin: 0 auto;
+     margin-top: 100px;
+     position: relative;
+     left: 40px;
+ }
+
+ .flip-box {
+     background-color: transparent;
+     width: 150px;
+     height: 150px;
+     border: 1px solid #f1f1f1;
+     display: inline-block;
+
+ }
+
+ #filpnav img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+ }
+
+ h2 {
+     font-size: 2em;
+     font-family: '궁서';
+     text-align: center;
+     /*
+     position: relative;
+     top: 140px;
+*/
+ }
+h1,#line{
+    display: none;
+}
+ .flip-box-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+ }
+
+ .flip-box:hover .flip-box-inner {
+     transform: rotateY(180deg);
+     border: 5px solid gold;
+     border-radius: 50%;
+     background-color: #ccad00;
+ }
+
+ .flip-box-front,
+ .flip-box-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+ }
+
+ .flip-box-back {
+     color: white;
+     transform: rotateY(180deg);
+     border-radius: 50%;
+ }
+
+ /*        색상, 위치 다시 선정*/
+ .flip-box-back h2 {
+     position: absolute;
+     left: 50px;
+     text-align: center;
+     color: white;
+ }
+#up{
+    display: none;
+}
+#tail{
+    background-color: #ccad00;
+}
+
+#tail ul{
+    display: inline-block;
+}
+#tail ul li{
+    list-style: none;
+}
+#tail ul li a{
+    text-decoration-line: none;
+    color: white;
+}
+#tail ul li a:hover{
+    text-decoration-line: underline;
+}
+#tail ul li a img{
+    width: 25px;
+    border-radius: 0%;
+}
