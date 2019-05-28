@@ -33,16 +33,6 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
-    // 필터링
-    var ar_fil = $('article').find('.pronum');
-    console.log(ar_fil);
-
-    // page 이름
-    var docu = $(document).find('title').text();
-    var pn = $('.main').find('div').find('h2');
-    $(pn).docu;
-
     // mouseover 시 article 사진 확대
     var d = $('article').find('ul').find('li').find('a').find('img');
     d.on('mouseover', function () {
