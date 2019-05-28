@@ -32,10 +32,11 @@
     top: 50px;
     right: 8%;
     font-size: 2em;
-    border: 10px solid white;
-    background-color: aliceblue;
+    border: 10px solid goldenrod;
+    background-color: saddlebrown;
     box-sizing: border-box;
     padding: 10px 0;
+    color:gold;
 }
 
 .bar {
