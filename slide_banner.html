@@ -8,7 +8,12 @@
     <meta name="description" content="" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/slide_banner.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript"></script>
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
     <style>
         html {
             width: 100%;
@@ -156,7 +161,7 @@
             display: inline-block;
         }
 
-        img {
+        #wrap2 img {
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -234,6 +239,51 @@
 
         }
 
+        #up img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            position: relative;
+            bottom: -300px;
+            float: right;
+        }
+
+/*        slide*/
+        .center{
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .1s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -297,6 +347,7 @@
                 <!----- Search Form Ends ---->
             </ul>
         </header>
+        <!--        배너-->
         <div id="banner">
             <div id="brandVisual">
                 <ul>
@@ -311,6 +362,7 @@
                 <li><a href="#">배너3</a></li>
             </ul>
         </div>
+        <!--        브랜드 filp-->
         <div id="wrap2">
             <div class="flip-box">
                 <div class="flip-box-inner">
@@ -353,6 +405,36 @@
                 </div>
             </div>
         </div>
+      <section class="center slider">
+        <div>
+            <img src="img/ana-azevedo-397083-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/angelo-pantazis-644196-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/bradley-ziffer-269008-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/bradley-ziffer-269009-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/bruno-nascimento-255674-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/concha-rodrigo-472725-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/devon-janse-van-rensburg-252118-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/hunters-race-408754-unsplash.jpg">
+        </div>
+        <div>
+            <img src="img/joshua-reddekopp-182233-unsplash.jpg">
+        </div>
+    </section>
+
         <!--        fooooooooooooooooooooooooooooooooooooooooooooooooooooooter-->
         <footer id="tail">
             <ul>
@@ -406,16 +488,12 @@
             </ul>
 
 
-
-
-
-
-
-
-
         </footer>
     </div>
-
+    <!--    맨위로-->
+    <div id="up">
+        <a href="#"><img src="img/up-arrow.png" alt="uparrow"></a>
+    </div>
 
 </body>
 

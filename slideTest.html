@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <script src='js/jquery-3.4.1.min.js'></script>
     <script>
-        $(function(){
-            $('#mainMenu a').on('click', function(){
-                if($(this).parent().next('div').hasClass('hide')){
+        $(function() {
+            $('#mainMenu a').on('click', function() {
+                if ($(this).parent().next('div').hasClass('hide')) {
                     var hid = $('#mainMenu a').parent().next('div').not('hide').slideUp(500);
                     hid.addClass('hide');
                     $(this).parent().next('div').slideDown(500);
                     $(this).parent().next('div').removeClass('hide');
-                }else{
+                } else {
                     $(this).parent().next('div').addClass('hide');
                     $(this).parent().next('div').slideUp(500);
-                }
+                };
 
-            })
-        })
+            });
+        });
+
     </script>
     <style>
-        .hide{
+        .hide {
             display: none;
         }
 
-        .smallMenu{
+        .smallMenu {
             position: absolute;
             width: 800px;
             height: 400px;
@@ -33,21 +35,21 @@
             border: 1px solid silver;
         }
 
-        #mainMenu{
+        #mainMenu {
             position: relative;
             left: 900px;
         }
 
-        #mainMenu li{
+        #mainMenu li {
             display: inline-block;
             width: 100px;
             height: 50px;
             border: 1px solid black;
         }
 
-
     </style>
 </head>
+
 <body>
     <ul id="mainMenu">
         <li>
@@ -92,4 +94,5 @@
         </li>
     </ul>
 </body>
+
 </html>
