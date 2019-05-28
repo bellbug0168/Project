@@ -102,18 +102,20 @@ nav ul li a:hover, nav ul li a:focus{
 
 /*메인 서비스 메뉴*/
 .service{
+    position: absolute;
+    top: 405px;
     margin: 0px auto;
     width: 100%;
-    height: 800px;
+    height: 515px;
     background-color: beige;
-    border: 1px solid;
+
 }
 
-
 .service_as{
+    position: relative;
+    top: -120px;
     width: 100%;
     height: 145px;
-    margin-top: 10px;
     background-color: cornflowerblue;
 }
 
@@ -127,7 +129,7 @@ nav ul li a:hover, nav ul li a:focus{
     text-decoration: none;
     position: relative;
     top: 55px;
-    padding: 55px 46%;
+    padding: 55px 45%;
 }
 
 .service_as h2:hover{
@@ -140,6 +142,8 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service_question{
+    position: relative;
+    top: -125px;
     width: 100%;
     height: 145px;
     margin-top: 10px;
@@ -156,7 +160,7 @@ nav ul li a:hover, nav ul li a:focus{
     text-decoration: none;
     position: relative;
     top: 55px;
-    padding: 55px 45%;
+    padding: 55px 43%;
 }
 
 .service_question h2:hover{
@@ -172,7 +176,7 @@ nav ul li a:hover, nav ul li a:focus{
     width: 100%;
     height: 145px;
     position: relative;
-    top: -595px;
+    top: -295px;
     background-color: coral;
 }
 
@@ -186,7 +190,7 @@ nav ul li a:hover, nav ul li a:focus{
     text-decoration: none;
     position: relative;
     top: 55px;
-    padding: 55px 45%;
+    padding: 55px 43%;
 }
 
 .service_FAQ h2:hover{
@@ -197,79 +201,28 @@ nav ul li a:hover, nav ul li a:focus{
     color: black;
     text-decoration: underline;
 }
-
-
 .service_tel{
-    background-image: url(/img/time-call.png);
-    background-position: 60px 50px;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    width: 245px;
-    height: 300px;
-    border: 1px solid darkslateblue;
+    text-align: center;
     position: relative;
-    top: 170px;
-    left: 5%;
-}
-
-.service_tel p{
-    margin-top: 10px
-}
-
-.service_tel h2{
-    margin-top: 200px;
-    margin-left: 1px;
+    top: 30px;
+    border: 1px solid;
 }
 
 .service_tel a{
     color: black;
     text-decoration: none;
-    padding: 0px 98px;
-    padding-top: 200px;
-    padding-bottom: 70px;
 }
 
 .service_email{
-    background-image: url(/img/email.png);
-    background-position: 60px 50px;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    width: 245px;
-    height: 300px;
-    border: 1px solid #38610B;
+    text-align: center;
     position: relative;
-    left: 60%;
-    top: -131px;
-}
-
-.service_email p{
-    margin-top: 10px
-}
-
-.service_email .email{
-    margin-left: -10px;
-}
-
-.service_email h2{
-    margin-top: 200px;
-    margin-left: 80px;
+    top: 35px;
+    border: 1px solid;
 }
 
 .service_email a{
     color: black;
     text-decoration: none;
-    margin-left: -80px;
-    padding: 0px 86px;
-    padding-top: 200px;
-    padding-bottom: 70px;
-}
-
-h2:nth-child(2){
-    margin: 0px;
-}
-
-h2:nth-child(3){
-    margin: 0px;
 }
 
 .service_tel_view a, .service_tel_view p, .service_tel_view h2{
@@ -282,11 +235,10 @@ h2:nth-child(3){
 
 /*메인 서비스 메뉴 끝*/
 
-
-
-
 /*푸터*/
 .footer{
+    position: absolute;
+    bottom: -230px;
     margin-top: 0px;
     width: 100%;
     height: 120px;
@@ -318,7 +270,7 @@ a.top{
     width: 50px;
     height: 50px;
     position: fixed;
-    left: 90%;
+    left: 85%;
     bottom: 40px;
     display: none;
     background-color: dimgrey;
