@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/pay.js"></script>
+    <link rel="stylesheet" media="screen
+     and (min-width:874px)" href="css/pay.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile_pay.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo">
+                <a href="#" target="_self">watchman</a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li>결제내역</li>
+                    <li>포인트</li>
+                    <li>문의&리뷰</li>
+                </ul>
+            </div>
+        </header>
+        <section id="main">
+            <h1>주문</h1>
+            <div id="product">
+                <table>
+                    <thead>
+                        <th>상품정보</th>
+                        <th>판매자</th>
+                        <th>배송비</th>
+                        <th>수량</th>
+                        <th>주문금액</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="" alt="시계사진"></td>
+                            <td>선택한것</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="sec">
+                <section id="s1">
+                    <div id="delivery">
+                        <h2>배송지정보</h2>
+                        <form>
+                            <ul>
+                                <li>
+                                    <label>배송지 선택</label>
+                                    <label for="default">기본배송지</label>
+                                    <input type="radio" name="addr" id="default">
+                                    <label for="new">새로운배송지</label>
+                                    <input type="radio" name="addr" id="new">
+                                </li>
+                                <li>
+                                    <label>수령인</label>
+                                    <input type="text" id="recipient" placeholder="50자 이내로 입력하세요">
+                                </li>
+                                <li>
+                                    <label>배송지명</label>
+                                    <select>
+                                        <option>집</option>
+                                        <option>회사</option>
+                                        <option>학교</option>
+                                        <option>친구</option>
+                                        <option>가족</option>
+                                    </select>
+                                </li>
+                                <li id="phone">
+                                    <label>연락처1</label>
+                                    <select>
+                                        <option>010</option>
+                                        <option>011</option>
+                                        <option>02</option>
+                                        <option>031</option>
+                                    </select>
+                                    <p>-</p>
+                                    <input type="text" id="num1" size="1px">
+                                    <p>-</p>
+                                    <input type="text" id="num2" size="1px">
+                                </li>
+                                <li>
+                                    <label>배송지 주소</label>
+                                    <input type="text" id="addrnum">
+                                    <input type="button" id="addrnumbtn" value="우편번호">
+                                    <input type="checkbox" id="add">
+                                    <label for="add">배송지목록에 추가</label>
+                                    <input type="checkbox" id="deaddr">
+                                    <label for="deaddr">기본배송지로 선택</label>
+                                </li>
+                                <li>
+                                    <label>배송메모</label>
+                                    <input type="text" id="memo" placeholder="요청사항을 직접 입력합니다" size="60%">
+                                </li>
+                            </ul>
+                            <p><img src="img/warning.png" alt="warning">도서산간 지역의 경우 추후 수령 시 추가 배송비가 과금될 수 있습니다.</p>
+                        </form>
+                    </div>
+                    <aside id="side">
+                        <b>주문자 정보</b>
+                        <!--                태그 추가해서 값추가-->
+                    </aside>
+
+                </section>
+                <section id="s2">
+                    <div id="payright">
+                        <h2>결제정보</h2>
+                        <ul id="payment">
+                            <li>
+                                <h2><a href="#">카드 간편결제</a></h2>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">간편카드결제 카드 추가</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h2><a href="#">계좌 간편결제</a></h2>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">간편카드결제 카드 추가</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h2><a href="#">일반결제</a></h2>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="how" id="card">
+                                            <label for="card"><img src="img/credit-card.png">신용카드</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="how" id="account">
+                                            <label for="account">실시간계좌이체</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="how" id="bankbook">
+                                            <label for="bankbook"><img src="img/bank.png">무통장입금</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="how" id="phone">
+                                            <label for="phone"><img src="img/smartphone.png">휴대폰</label>
+                                        </li>
+                                        <ul>
+                                            <li>
+                                                <label>카드구분</label>
+                                                <input type="radio" name="card" id="indi">
+                                                <label for="indi">개인카드</label>
+                                                <input type="radio" name="card" id="corpo">
+                                                <label for="corpo">법인카드</label>
+                                            </li>
+                                            <li>
+                                                <label>카드선택</label>
+                                                <select>
+                                                    <option>국민</option>
+                                                    <option>비씨</option>
+                                                    <option>신한</option>
+                                                    <option>현대</option>
+                                                    <option>농협</option>
+                                                    <option>삼성</option>
+                                                    <option>롯데</option>
+                                                    <option>하나</option>
+                                                    <option>카카오뱅크</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="allyes">
+                                        <label for="allyes">전체 동의하기</label>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="up">
+                                                <label for="up">위 상품의 구매조건 확인 및 결제진행 동의</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>구매하신 상품 배송 및 주문처리를 위해 개인정보를 제공받는 판매자:</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <aside id="m">
+                        <P>결제금액입니다.</P>
+
+                    </aside>
+                </section>
+            </div>
+            <div id="paybtn">
+                <h2>결제하기</h2>
+            </div>
+        </section>
+        <footer id="tail">
+            <ul>
+                <li>네이버페이 이용약관</li>
+                <li>전자금융거래 이용약관</li>
+                <li><b>개인정보처리방침</b></li>
+                <li>청소년보호정책</li>
+                <li>쇼핑&페이 고객센터</li>
+            </ul>
+            <ul id="center">
+                <li>
+                    <label><b>고객센터 주소</b></label>
+                    종로 비트캠프
+                </li>
+                <li>
+                    <label><b>전화</b></label>
+                    02-000-0000<a href="#">(전화전클릭)</a>
+                    1588-3816 (결제도용신고)
+                </li>
+                <li>
+                    <label><b>1:1문의</b></label>
+                    <a href="#">바로가기</a>
+                </li>
+            </ul>
+        </footer>
+    </div>

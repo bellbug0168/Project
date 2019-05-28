@@ -1,0 +1,74 @@
+#wrap{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#logo a {
+    font-family: 'Satisfy', cursive;
+    font-size: 3em;
+    color: gold;
+    text-decoration-line: none;
+}
+
+#nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+table,
+th,
+td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: azure;
+}
+
+#delivery ul li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+#phone * {
+    display: inline-block;
+}
+
+#delivery form img {
+    width: 22px;
+    position: relative;
+    top: 1px;
+}
+
+#payment ul li img {
+    width: 120px;
+}
+
+#payright ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+#payright ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#tail ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center
+}
+
+#paybtn {
+    border: 1px solid silver;
+    text-align: center;
+}
+
+#tail,
+#account {
+    display: none;
+}

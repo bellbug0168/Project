@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 10px 10px;
+}
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#logo a {
+    font-family: 'Satisfy', cursive;
+    font-size: 5em;
+    color: gold;
+    text-decoration-line: none;
+}
+
+#nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 70%;
+    margin-right: 30px;
+}
+
+header {
+    border-bottom: 1px solid silver;
+}
+
+table,
+th,
+td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: azure;
+}
+
+#delivery ul li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+#phone * {
+    display: inline-block;
+}
+
+#delivery form img {
+    width: 22px;
+    position: relative;
+    top: 13px;
+}
+
+#delivery form {
+    border: 1px solid silver;
+}
+
+#delivery {
+
+    float: left;
+    width: 100%;
+}
+
+#side {
+    border: 1px solid silver;
+    clear: both;
+    float: right;
+    width: 35%;
+    position: relative;
+    top: 100px;
+}
+
+#payright {
+    border: 1px solid silver;
+    clear: both;
+    float: left;
+    width: 60%;
+
+}
+#payright ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+#payright ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#m {
+    border: 1px solid silver;
+    clear: both;
+    float: right;
+     width: 35%;
+    position: relative;
+    bottom: 200px;
+
+}
+#payment div ul li img{
+    display: none;
+}
+#paybtn{
+    clear: both;
+    border: 1px solid silver;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tail ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center
+}
+
