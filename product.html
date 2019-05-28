@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/product.css">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/product.css" media="screen and (min-width: 874px)">
+    <link rel="stylesheet" href="css/product2.css" media="screen and (max-width: 479px)">
+    <meta name="viewport" content="width=device-width, initial-scale='1.0', minimum-scale='1.0', maximum-scale='2.0'">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/product.js"></script>
+    <script src="js/jquery.cycle2.js"></script>
 </head>
 
 <body>
@@ -93,7 +96,14 @@
         <section class="bn">
             <!-- 경로, 배경 -->
             <div>경로를 잡아주고 싶은데 어떻게 잡는 지 모르겠다</div>
-            <div></div>
+            <div>
+                <div class="cycle-slideshow">
+                    <img src="img/hunters-race-408759-unsplash.jpg" alt="banner 1">
+                    <img src="img/freestocks-org-132631-unsplash.jpg" alt="banner 2">
+                    <img src="img/ryan-franco-235101-unsplash.jpg" alt="banner 3">
+                </div>
+            </div>
+
         </section>
 
         <section class="main">
@@ -223,6 +233,4 @@
         </footer>
         <p id="copyright">Copyright 2019.WATCHMAN.ALL rights reserved.</p>
     </div>
-</body>
-
-</html>
+</body></html>

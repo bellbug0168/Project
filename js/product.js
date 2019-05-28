@@ -19,21 +19,9 @@ jQuery(document).ready(function ($) {
         $(this).find('li').hide();
     });
 
-    // menu event
-    var b = $('.bn').find('div').eq(1); // 밤하늘
-    var c = $('.header_nav').find('ul'); // 메뉴들
-
-    b.on('mouseover', function () {
-        b.fadeOut(2000, function () {
-            b.fadeIn(2000, function () {
-                $(this).css('background', 'url("http://127.0.0.1:49261/img/freestocks-org-132631-unsplash.jpg")').css('background-size', 'cover').css('background-position', 'center');
-            });
-        });
-    });
-
     // menu slide down
     var sl = $('.header_nav').find('ul').find('li');
-    sl.on('mouseover', function () {
+    sl.on('click', function () {
         if ($(this).children('div').hasClass('hide')) {
             var hi = sl.children('div').not('hide').slideUp(500);
             hi.addClass('hide');
@@ -49,6 +37,11 @@ jQuery(document).ready(function ($) {
     // 필터링
     var ar_fil = $('article').find('.pronum');
     console.log(ar_fil);
+
+    // page 이름
+    var docu = $(document).find('title').text();
+    var pn = $('.main').find('div').find('h2');
+    $(pn).docu;
 
     // mouseover 시 article 사진 확대
     var d = $('article').find('ul').find('li').find('a').find('img');

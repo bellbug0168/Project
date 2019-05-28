@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 250px;
+    height: 150px;
+    margin-top: 50px;
+    font-family: 'Satisfy', cursive;
+    font-size: 3em;
+    color: gold;
+    border: 1px solid tranparent;
+}

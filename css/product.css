@@ -3,16 +3,10 @@
     padding: 0;
 }
 
-body {
-    background: url('http://127.0.0.1:49331/img/hitesh-choudhary-452952-unsplash.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: opacity;
-}
-
 .wrap {
     margin: 0 auto;
     width: 1600px;
+    color: darkgoldenrod;
 }
 
 .wrap ul li {
@@ -98,7 +92,7 @@ header .header_nav ul li {
     margin-right: 20px;
 }
 
-.header_nav>ul>li>div {
+.header_nav > ul > li > div {
     border: 1px solid transparent;
     background-color: gold;
     position: absolute;
@@ -119,17 +113,19 @@ header .header_nav ul li {
     margin-bottom: 10px;
 }
 
-.bn > div:nth-child(2) {
-    border: 1px solid transparent;
-    height: 350px;
-    background-image: url('http://127.0.0.1:49261/img/hunters-race-408759-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
+.bn > div:nth-child(2) img {
+    width: 1600px;
+    height: 355px;
 }
 
 .main {
     margin-top: 20px;
     border-top: 3px solid gold;
+}
+
+.main h2 {
+    text-align: center;
+    margin: 10px;
 }
 
 .main > div:nth-child(1) {
