@@ -1,11 +1,12 @@
 $(function () {
-     $("#carousel").flipster({
-                buttons:true,
-                style:'coverflow',
-                loop:true,
-                autoplay:2000,
-                scrollwheel:false
-            });
+
+    $("#carousel").flipster({
+        buttons: true,
+        style: 'coverflow',
+        loop: true,
+        autoplay: 2000,
+        scrollwheel: false
+    });
     var width = 0;
     $(window).on("resize load", function () {
         width = $(window).width();
@@ -112,9 +113,7 @@ $(function () {
                 $('#mslider div').css('background-color', 'floralwhite');
                 setTimeout(function () {
                     $('#menu').addClass('hide');
-
                     $('#menu').hide();
-
                 }, 300);
                 $('#mslider img:eq(0)').attr('src', 'img/icon.png');
 
@@ -153,6 +152,20 @@ $(function () {
                     $('#section article:eq(1)').stop().slideDown(1000).removeClass('hide');
                 }, 500);
 
+                $('#support > div img:eq(0)').fadeIn(500);
+                $('#support > div img:eq(1)').fadeIn(1000);
+                $('#support > div img:eq(2)').fadeIn(1500);
+                $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                setTimeout(function () {
+                    $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                }, 400);
+                setTimeout(function () {
+                    $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                }, 1000);
+                setTimeout(function () {
+                    $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                }, 1500);
+
             })
             $('#menu li:eq(4)').on('click', function () {
                 $('#section article').not('.hide').stop().slideUp(500).addClass('hide');
@@ -179,6 +192,9 @@ $(function () {
 
             })
         } else if (width >= 874) {
+            $("#popup1").load("/layered_popup.html");
+            $("#popup2").load("/layered_popup2.html");
+            $("#popup3").load("/layered_popup3.html");
             $('#mslider').children('a').on('click', function () {
 
                 if ($('#menu').hasClass('hide')) {
@@ -342,11 +358,38 @@ $(function () {
                     setTimeout(function () {
                         $('#section article:eq(1)').stop().slideDown(1000).removeClass('hide');
                     }, 400);
+                    $('#support > div img:eq(0)').fadeIn(500);
+                    $('#support > div img:eq(1)').fadeIn(1000);
+                    $('#support > div img:eq(2)').fadeIn(1500);
+                    $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                    setTimeout(function () {
+                        $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                    }, 500);
+                    setTimeout(function () {
+                        $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                    }, 1000);
+                    setTimeout(function () {
+                        $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                    }, 1500);
+
                 } else {
                     $('#section article').not('.hide').stop().slideUp(500).addClass('hide');
                     setTimeout(function () {
                         $('#section article:eq(1)').stop().slideDown(1000).removeClass('hide');
                     }, 500);
+                    $('#support > div img:eq(0)').fadeIn(500);
+                    $('#support > div img:eq(1)').fadeIn(1000);
+                    $('#support > div img:eq(2)').fadeIn(1500);
+                    $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                    setTimeout(function () {
+                        $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                    }, 400);
+                    setTimeout(function () {
+                        $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                    }, 1000);
+                    setTimeout(function () {
+                        $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                    }, 1500);
                 }
             });
             $('#menu li:eq(4)').on('click', function () {
@@ -438,9 +481,9 @@ $(function () {
                         break;
                     case 39:
                         console.log('right');
-                        if(!($('#section article:eq(2)').hasClass('hide'))){
+                        if (!($('#section article:eq(2)').hasClass('hide'))) {
                             $('#Tomain').focus().addClass('Tomain');
-                        }else if($('#menu').hasClass('hide')) {
+                        } else if ($('#menu').hasClass('hide')) {
                             $('#mslider a:eq(0)').focus();
                             console.log('menu focus');
                         } else if ($('#mslider a:eq(0)').hasClass('keyhandler')) {
@@ -488,10 +531,25 @@ $(function () {
                         console.log("3");
                         $('#section article').eq(0).slideDown(1000);
                         break;
+
                     case "4":
                         console.log("4");
                         $('#section article').eq(1).slideDown(1000);
+                        $('#support > div img:eq(0)').fadeIn(500);
+                        $('#support > div img:eq(1)').fadeIn(1000);
+                        $('#support > div img:eq(2)').fadeIn(1500);
+                        $('#support > div > div:nth-of-type(1)').fadeIn(4000);
+                        setTimeout(function () {
+                            $('#support > div > div:nth-of-type(2)').eq(0).slideDown(1000)
+                        }, 400);
+                        setTimeout(function () {
+                            $('#support > div > div:nth-of-type(2)').eq(1).slideDown(1000)
+                        }, 1000);
+                        setTimeout(function () {
+                            $('#support > div > div:nth-of-type(2)').eq(2).slideDown(1000)
+                        }, 1500);
                         break;
+
                     case "5":
                         $('#section article').eq(3).slideDown(1000);
                         break;

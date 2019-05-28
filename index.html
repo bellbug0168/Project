@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro</title>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.selectric.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/selectric.css">
     <script src="js/jquery.cycle2.js"></script>
     <script src="js/index.js"></script>
@@ -15,13 +16,38 @@
     <link rel="stylesheet" href="css/index75.css" media="screen and (min-width:480px) and (max-width:873px)">
     <link rel="stylesheet" href="css/index100.css" media="screen and (min-width:874px) and (max-width:1920px)">
     <link rel="stylesheet" href="css/index30.css" media="screen and (max-width:479px)">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        #popup1 {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
 
+        #popup2 {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        #popup3 {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
 </head>
 
 <body>
     <header>
         <div id="wrap">
+            <div id="popup1"></div>
+            <div id="popup2"></div>
+            <div id="popup3"></div>
+
             <div id="cycle" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> a">
                 <a href="#"><img src="img/fist_picture.png" alt="시계1"></a>
                 <a href="#"><img src="img/second_picture.png" alt="시계2"></a>
@@ -47,7 +73,9 @@
                 </div>
                 <nav class="mhide">
                     <ul>
-                        <li><h2>Watch Man</h2></li>
+                        <li>
+                            <h2>Watch Man</h2>
+                        </li>
                         <li>
                             <select name="msel" id="msel" class="mhide">
                                 <option value="1">Intro</option>
@@ -79,26 +107,26 @@
 
     </header>
     <section id="section">
-
+        <h2 class="hide">section</h2>
         <article class="hide">
-            <h1>About</h1>
+            <h2>About</h2>
             <div id="content">
                 <div>
-                    <img src="img/1.jpg" alt="">
-                    <h3>이 사진은 귀여운 고양이 사진입니다.</h3>
-                    <p>왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.</p>
+                    <img src="img/about_first.png" alt="about_first">
+                    <h3>개방된 공간, 소통의 장소</h3>
+                    <p>24시간 365일 오픈되어있는 저희 사무실에서는 고객을 위한 사무원들이 준비만전의 자세로 응대할 자세를 하고 있습니다.</p>
                     <div class="bar"></div>
                 </div>
                 <div>
-                    <img src="img/2.jpg" alt="">
-                    <h3>이 사진은 귀여운 고양이 사진입니다.</h3>
-                    <p>왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.</p>
+                    <img src="img/about_second.jpg" alt="about_second">
+                    <h3>검증된 전문가, 발전된 기술력</h3>
+                    <p>이미 해외에서 그 실력을 증명한 시계 명인들이 철저히 검증한 제품들로 고객님들께 최선의 서비스를 다하고자 최첨단 시스템을 도입하여 운용하고 있습니다.</p>
                     <div class="bar"></div>
                 </div>
                 <div>
-                    <img src="img/3.jpg" alt="">
-                    <h3>이 사진은 귀여운 고양이 사진입니다.</h3>
-                    <p>왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.왼쪽 자리에는 적당한 크기의 시계 사진이 와야 합니다.</p>
+                    <img src="img/about_third.jpg" alt="about_third">
+                    <h3>흐르는 시간, 변치 않는 마음</h3>
+                    <p>기나긴 시간의 흐름에도 변치않고 자신을 기억하는 시계의 초침과도 같이 처음과 같은 마음으로 고객님을 대응하는 정신으로 항상 노력하고 있습니다.</p>
                     <div class="bar"></div>
                 </div>
             </div>
@@ -110,10 +138,50 @@
             </footer>
         </article>
         <article class="hide">
-            <div>
+            <div id="support">
                 <h2>Support</h2>
-                <div>희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라 저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라저희 팀은 다양한 종류의 고급 시계를 한 눈에 찾아볼 수 있고 이를 통해 블라블라블라</div>
+                <div>
+                    <img src="img/tag1.jpg" alt="이미지태그1">
+                    <div>
+                        <p>관련 사이트</p>
+                    </div>
+                    <div>
+                        <ul id="supportSite">
+                            <li><a href="https://www.jaeger-lecoultre.com
+ ">https://www.jaeger-lecoultre.com
+                                </a></li>
+                            <li><a href="https://www.omegawatches.com">https://www.omegawatches.com</a></li>
+                            <li><a href="https://www.patek.com">https://www.patek.com</a></li>
+                            <li><a href="https://www.cartier.co.kr ">https://www.cartier.co.kr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/tag2.jpg" alt="이미지태그2">
+                    <div>
+                        <p>연락처 및 주소</p>
+                    </div>
+                    <div id="address">
+                        <ul>
+                            <li>서울 종로구 종로 69 YMCA빌딩 7층, 3호</li>
+                            <li>032) 930-7066~7</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/tag3.jpg" alt="이미지태그3">
+                    <div>
+                        <p>To. 고객센터</p>
+                    </div>
+                    <div>
+                        <p style="color:darkblue; font-size: 18px; font-weight: 800; text-indent: 12px">더 많은 정보를 원하신다면 고객 센터를 방문하십시오.</p>
+                        <br>
+                        <a href="support_main.html" style="margin-left: 15px; font-weight: 800;">
+                            Go to Support main</a>
+                    </div>
+                </div>
             </div>
+            <div class="bar"></div>
             <footer>
                 <div>
                     <address>CopyLight by Yun Geonil</address>
@@ -122,11 +190,11 @@
         </article>
         <article class="hide">
             <div>
-               <div class ="menuimage" >
-                   <h1>Main Site</h1>
+                <div class="menuimage">
+                    <h2>Main Site</h2>
 
                     <img src="img/Menuimage.png" alt="menu">
-               </div>
+                </div>
 
                 <div id="carousel">
                     <ul class="flip-items">
@@ -144,22 +212,24 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div id="maincontent">
                     <p>Want to see more products?</p>
-                    <a href="#" id="Tomain"><p>Go to Main page...</p></a>
+                    <a href="menu.html" id="Tomain">
+                        <p>Go to Main page...</p>
+                    </a>
                 </div>
                 <footer>
-                <div class="bar"></div>
-                <div>
-                    <address>CopyLight by Yun Geonil</address>
-                </div>
-            </footer>
+                    <div class="bar"></div>
+                    <div>
+                        <address>CopyLight by Yun Geonil</address>
+                    </div>
+                </footer>
             </div>
 
         </article>
 
         <article class="hide">
-            <h2>오시는 길</h2>
+            <h2>Directions</h2>
             <div id="map"></div>
             <script>
                 var map;
@@ -186,12 +256,12 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_2MNS8xHNWrpwOHTzACMw01LUdl-KjP4&callback=initMap" async defer></script>
             <div>
                 <ul>
-                    주소 및 연락처
-                    <li>서울 종로구 종로 69 YMCA빌딩 7층, 3호</li>
-                    <li>032) 930-7066~7</li>
+                    <li>오시는 길</li>
+                    <li>주변 지하철 역 : <span>1호선(종각), 5호선(종로3가), 2호선(을지로 입구), 3호선(종로3가)</span></li>
+                    <li>주변 버스정류장 : <span>종각역YMCA(01-683), 종로2가(01-013), 종로2가(01-766),종로2가(01-014)</span></li>
                 </ul>
             </div>
-            <div class="bar"></div>
+            <hr>
             <footer>
                 <div>
                     <address>CopyLight by Yun Geonil</address>
