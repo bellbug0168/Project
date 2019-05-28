@@ -39,12 +39,21 @@ td {
 
 table {
     width: 100%;
+
 }
 
-th {
+th{
     background-color: azure;
 }
 
+#product img{
+    width: 25%;
+    position: relative;
+    left: 33%;
+}
+#product tr td p{
+    text-align: center;
+}
 #delivery ul li {
     list-style: none;
     padding-bottom: 20px;
@@ -76,7 +85,7 @@ th {
     float: right;
     width: 35%;
     position: relative;
-    top: 100px;
+    top: 118px;
 }
 
 #payright {

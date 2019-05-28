@@ -1,6 +1,7 @@
-#wrap{
+#wrap {
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 #logo a {
     font-family: 'Satisfy', cursive;
     font-size: 3em;
@@ -11,6 +12,9 @@
 #nav ul li {
     list-style: none;
     display: inline-block;
+}
+#product tr td img{
+    width: 300px;
 }
 
 table,
