@@ -73,9 +73,9 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .menu li a{
+    text-align: center;
     margin-top: 20px;
     display: block;
-    padding-left: 47%;
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
