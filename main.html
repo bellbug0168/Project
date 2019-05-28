@@ -1,357 +1,275 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Slick Playground</title>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/slide_banner.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/wowslider.js"></script>
-    <script type="text/javascript" src="sample/script.js"></script>
-    <script src="js/application.js"></script>
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="sample/styles/style.css" />
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/selectric.css">
+    <script src="js/jquery.cycle2.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="css/index75.css" media="screen and (min-width:480px) and (max-width:873px)">
+    <link rel="stylesheet" href="css/index100.css" media="screen and (min-width:874px) and (max-width:1920px)">
+    <link rel="stylesheet" href="css/index30.css" media="screen and (max-width:479px)">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        #popup1 {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        #popup2 {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        #popup3 {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div id="wrap">
-        <header>
-            <div id="logo">
-                <p>watchman</p>
+    <header>
+        <div id="wrap">
+            <div id="popup1"></div>
+            <div id="popup2"></div>
+            <div id="popup3"></div>
+
+            <div id="cycle" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> a">
+                <a href="#"><img src="img/fist_picture.png" alt="시계1"></a>
+                <a href="#"><img src="img/second_picture.png" alt="시계2"></a>
+                <a href="#"><img src="img/third_picture.png" alt="시계3"></a>
+                <a href="#"><img src="img/fourth_picture.png" alt="시계4"></a>
             </div>
-            <ul class="nav">
-                <li class="dropdown"><a href="#">브랜드</a>
-                    <div class="fulldrop">
-                        <div class="column">
-                            <ul>
-                                <li><a href="#">롤렉스</a></li>
-                                <li><a href="#">파텍필립</a></li>
-                                <li><a href="#">까르티에</a></li>
-                                <li><a href="#">티쏘</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="dropdown"><a href="#">뭐시기</a>
-                    <div class="fulldrop">
-                        <div class="column">
-                            <ul>
-                                <li><a href="#">뭐</a></li>
-                                <li><a href="#">시</a></li>
-                                <li><a href="#">기</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
 
-                <li class="dropdown"><a href="#">고객센터</a>
-                    <div class="fulldrop">
-                        <div class="column">
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">1:1문의</a></li>
-                                <li><a href="#">자주묻는질문</a></li>
-                            </ul>
+            <div id="am">
+                <div id="menu" class="hide">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Intro</a></li>
+                            <li><a href="#">Main Site</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Suppot</a></li>
+                            <li><a href="#">Map</a></li>
+                        </ul>
+                        <div id="pnbtn">
+                            <a href="#" id="prev">Prev</a>
+                            <a href="#" id="next">Next</a>
                         </div>
-                    </div>
-                </li>
-
-                <li class="dropdown"><a href="#">마이페이지</a>
-                    <div class="fulldrop">
-                        <div class="column">
-                            <ul>
-                                <li><a href="#">회원정보</a></li>
-                                <li><a href="#">관심상품</a></li>
-                                <li><a href="#">장바구니</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li id="content">
-                    <dl id="rank-list">
-                        <dt>실시간 인기 브랜드</dt>
-                        <dd>
-                            <ol>
-                                <li><a href="#">1위 : 파텍필립</a></li>
-                                <li><a href="#">2위 : 브레게</a></li>
-                                <li><a href="#">3위 : 오데마 삐게</a></li>
-                                <li><a href="#">4위 : 바쉐론 콘스탄틴</a></li>
-                                <li><a href="#">5위 : 아랑게 운트 조네</a></li>
-                                <li><a href="#">6위 : 글라슈테 오리지날</a></li>
-                                <li><a href="#">7위 : 블랑팡</a></li>
-                                <li><a href="#">8위 : 삐아제</a></li>
-                                <li><a href="#">9위 : 지라르페르고</a></li>
-                                <li><a href="#">10위 : 자게르컬트르</a></li>
-                            </ol>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="search">
-                    <form action="Search.php">
-                        <i class="icon-search icon-large"></i><input type="text" placeholder="검색">
-                    </form>
-                </li>
-            </ul>
-        </header>
-        <hr>
-        <!--banner-->
-        <div id="wowslider">
-            <div id="wowslider-container">
-                <div class="ws_images">
-                    <ul>
-                        <li><a href="#"><img src="/img/ana-azevedo-397083-unsplash.jpg" alt="" id="wows_0" /></a></li>
-                        <li><a href="#"><img src="/img/angelo-pantazis-644196-unsplash.jpg" alt="" id="wows_1" /></a></li>
-                        <li><a href="#"><img src="/img/bradley-ziffer-269008-unsplash.jpg" alt="" title="" id="wows_2" /></a></li>
-                        <li><a href="#"><img src="/img/bruno-nascimento-255674-unsplash.jpg" alt="" title="" id="wows_3" /></a></li>
-                    </ul>
+                    </nav>
                 </div>
-                <a href="#" class="ws_frame"></a>
+                <nav class="mhide">
+                    <ul>
+                        <li>
+                            <h2>Watch Man</h2>
+                        </li>
+                        <li>
+                            <select name="msel" id="msel" class="mhide">
+                                <option value="1">Intro</option>
+                                <option value="2">Main</option>
+                                <option value="3">About</option>
+                                <option value="4">Support</option>
+                                <option value="5">Map</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="mslider">
+                    <a href="#"><img src="img/icon.png" alt="아이콘"></a>
+                    <hr>
+                    <div>
+                        W<br>a<br>t<br>c<br>h<br>M<br>a<br>n
+                    </div>
+                    <hr>
+
+                </div>
+            </div>
+            <div id="cycle2move">
+                <div id="cycle2" class="cycle-slideshow" data-cycle-prev="#prev" data-cycle-next="#next">
+                    <img src="img/first_right.jpg" alt="오른쪽 사진1">
+                    <img src="img/second_right.jpg" alt="오른쪽 사진2">
+                </div>
             </div>
         </div>
-        <hr>
-        <!--        브랜드 filp-->
-        <section id="filpnav">
-            <h1>브랜드 TOP8</h1>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/rr.webp"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <a href="#"><img src="img/back_rr.gif">
-                            <h2>Rolex<br>바로가기</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/pt.jpg"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>파텍필립</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/ca.jpg"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>까르티에</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/ti.jpg"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>티쏘</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/rr.webp"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <a href="#"><img src="img/back_rr.gif">
-                            <h2>Rolex<br>바로가기</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/rr.webp"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <a href="#"><img src="img/back_rr.gif">
-                            <h2>Rolex<br>바로가기</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/rr.webp"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <a href="#"><img src="img/back_rr.gif">
-                            <h2>Rolex<br>바로가기</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <a href="#"><img src="img/rr.webp"></a>
-                    </div>
-                    <div class="flip-box-back">
-                        <a href="#"><img src="img/back_rr.gif">
-                            <h2>Rolex<br>바로가기</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <!--    center slider-->
-        <h1>sns인기 사진</h1>
-        <section class="center slider">
-            <div>
-                <img src="img/ana-azevedo-397083-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/angelo-pantazis-644196-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/bradley-ziffer-269008-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/bradley-ziffer-269009-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/bruno-nascimento-255674-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/concha-rodrigo-472725-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/devon-janse-van-rensburg-252118-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/hunters-race-408754-unsplash.jpg">
-            </div>
-            <div>
-                <img src="img/joshua-reddekopp-182233-unsplash.jpg">
-            </div>
-        </section>
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript">
-            $(document).on('ready', function() {
-                $(".center").slick({
-                    dots: true,
-                    infinite: true,
-                    centerMode: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 3
-                });
-            });
-        </script>
-        <hr>
-        <!--맨위로-->
-        <div id="up">
-            <a href="#">
-                <img src="img/up-arrow.png" alt="uparrow">
-            </a> </div>
-        <!--        fooooooooooooooooooooooooooooooooter-->
-        <footer id="tail">
-            <ul>
-                <li>
-                    <a href="#">
-                        <b> 브랜드</b></a>
-                </li>
-                <li>
-                    <a href="#"> 롤렉스 </a> </li>
-                <li>
-                    <a href="#"> 파텍필립 </a> </li>
-                <li>
-                    <a href="#"> 까르티에 </a> </li>
-                <li>
-                    <a href="#"> 티쏘 </a> </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <b> 뭐시기 </b> </a>
-                </li>
-                <li>
-                    <a href="#"> 뭐일까요 </a> </li>
-                <li>
-                    <a href="#"> 나도 </a> </li>
-                <li>
-                    <a href="#"> 몰라용 </a> </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <b> 고객센터 </b> </a>
-                </li>
-                <li>
-                    <a href="#"> FAQ </a>
-                </li>
-                <li>
-                    <a href="#"> 1: 1 문의 </a>
-                </li>
-                <li>
-                    <a href="#"> 자주묻는질문 </a> </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <b> 마이페이지 </b> </a> </li>
-                <li>
-                    <a href="#"> 회원정보 </a> </li>
-                <li>
-                    <a href="#"> 관심상품 </a>
-                </li>
-                <li>
-                    <a href="#"> 장바구니
-                    </a> </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <b> 온라인매장지원 </b> </a>
-                </li>
-                <li>
-                    <a href="#"> 연락처 </a>
-                </li>
-                <li>
-                    <a href="#"> 이메일 </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <b> 팔로우하기 </b> </a> </li>
-                <li>
-                    <a href="#">
-                        <img src="img/facebook.png" alt="facebook">
-                    </a> </li>
-                <li>
-                    <a href="#">
-                        <img src="img/instagram.png" alt="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/twitter.png" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/youtube.png" alt="youtube">
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </div>
 
-</body></html>
+    </header>
+    <section id="section">
+        <h2 class="hide">section</h2>
+        <article class="hide">
+            <h2>About</h2>
+            <div id="content">
+                <div>
+                    <img src="img/about_first.png" alt="about_first">
+                    <h3>개방된 공간, 소통의 장소</h3>
+                    <p>24시간 365일 오픈되어있는 저희 사무실에서는 고객을 위한 사무원들이 준비만전의 자세로 응대할 자세를 하고 있습니다.</p>
+                    <div class="bar"></div>
+                </div>
+                <div>
+                    <img src="img/about_second.jpg" alt="about_second">
+                    <h3>검증된 전문가, 발전된 기술력</h3>
+                    <p>이미 해외에서 그 실력을 증명한 시계 명인들이 철저히 검증한 제품들로 고객님들께 최선의 서비스를 다하고자 최첨단 시스템을 도입하여 운용하고 있습니다.</p>
+                    <div class="bar"></div>
+                </div>
+                <div>
+                    <img src="img/about_third.jpg" alt="about_third">
+                    <h3>흐르는 시간, 변치 않는 마음</h3>
+                    <p>기나긴 시간의 흐름에도 변치않고 자신을 기억하는 시계의 초침과도 같이 처음과 같은 마음으로 고객님을 대응하는 정신으로 항상 노력하고 있습니다.</p>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <address>CopyLight by Yun Geonil</address>
+                </div>
+            </footer>
+        </article>
+        <article class="hide">
+            <div id="support">
+                <h2>Support</h2>
+                <div>
+                    <img src="img/tag1.jpg" alt="이미지태그1">
+                    <div>
+                        <p>관련 사이트</p>
+                    </div>
+                    <div>
+                        <ul id="supportSite">
+                            <li><a href="https://www.jaeger-lecoultre.com
+ ">https://www.jaeger-lecoultre.com
+                                </a></li>
+                            <li><a href="https://www.omegawatches.com">https://www.omegawatches.com</a></li>
+                            <li><a href="https://www.patek.com">https://www.patek.com</a></li>
+                            <li><a href="https://www.cartier.co.kr ">https://www.cartier.co.kr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/tag2.jpg" alt="이미지태그2">
+                    <div>
+                        <p>연락처 및 주소</p>
+                    </div>
+                    <div id="address">
+                        <ul>
+                            <li>서울 종로구 종로 69 YMCA빌딩 7층, 3호</li>
+                            <li>032) 930-7066~7</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/tag3.jpg" alt="이미지태그3">
+                    <div>
+                        <p>To. 고객센터</p>
+                    </div>
+                    <div>
+                        <p style="color:darkblue; font-size: 18px; font-weight: 800; text-indent: 12px">더 많은 정보를 원하신다면 고객 센터를 방문하십시오.</p>
+                        <br>
+                        <a href="support_main.html" style="margin-left: 15px; font-weight: 800;">
+                            Go to Support main</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bar"></div>
+            <footer>
+                <div>
+                    <address>CopyLight by Yun Geonil</address>
+                </div>
+            </footer>
+        </article>
+        <article class="hide">
+            <div>
+                <div class="menuimage">
+                    <h2>Main Site</h2>
+
+                    <img src="img/Menuimage.png" alt="menu">
+                </div>
+
+                <div id="carousel">
+                    <ul class="flip-items">
+
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="img/carousel_1.jpeg" alt="first">
+                        </li>
+
+                        <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                            <img src="img/carousel_2.jpg" alt="second">
+                        </li>
+
+                        <li data-flip-title="Cyan" data-flip-category="Blues">
+                            <img src="img/carousel_3.png" alt="third">
+                        </li>
+                    </ul>
+                </div>
+                <div id="maincontent">
+                    <p>Want to see more products?</p>
+                    <a href="menu.html" id="Tomain">
+                        <p>Go to Main page...</p>
+                    </a>
+                </div>
+                <footer>
+                    <div class="bar"></div>
+                    <div>
+                        <address>CopyLight by Yun Geonil</address>
+                    </div>
+                </footer>
+            </div>
+
+        </article>
+
+        <article class="hide">
+            <h2>Directions</h2>
+            <div id="map"></div>
+            <script>
+                var map;
+
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {
+                            lat: 37.570659,
+                            lng: 126.985276
+                        },
+                        zoom: 18
+                    });
+                    var marker = new google.maps.Marker({
+                        position: {
+                            lat: 37.570659,
+                            lng: 126.985276
+                        },
+                        map: map,
+                        title: "프로젝트 빌딩"
+                    })
+                }
+
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_2MNS8xHNWrpwOHTzACMw01LUdl-KjP4&callback=initMap" async defer></script>
+            <div>
+                <ul>
+                    <li>오시는 길</li>
+                    <li>주변 지하철 역 : <span>1호선(종각), 5호선(종로3가), 2호선(을지로 입구), 3호선(종로3가)</span></li>
+                    <li>주변 버스정류장 : <span>종각역YMCA(01-683), 종로2가(01-013), 종로2가(01-766),종로2가(01-014)</span></li>
+                </ul>
+            </div>
+            <hr>
+            <footer>
+                <div>
+                    <address>CopyLight by Yun Geonil</address>
+                </div>
+            </footer>
+        </article>
+    </section>
+
+</body>
+
+</html>
