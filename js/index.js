@@ -1,4 +1,5 @@
 $(function () {
+
     setInterval(function () {
         let d = new Date();
         let h = d.getHours();
