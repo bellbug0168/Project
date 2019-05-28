@@ -47,7 +47,17 @@ $(document).ready(function(){
 	   return false;
     });
     // 스크롤 위로 끝
+    // 리스트 메뉴
+    $('.tab>li').find('ul').hide();
+    $('.tab>li:eq(0)').find('h2').next().show().css('background-color', 'white');
 
+    $('.tab>li>h2').on('click', function(){
+        $('.tab>li').find('ul').hide();
+        $('.tab>li').find('h2').css('background-color', 'white');
+        $(this).css('background-color', 'red').next().show().css('background-color', 'white');
+    });
+
+    // 리스트 메뉴 끝
     // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
     $(".list_menu>a").click(function(){
        if($(this).next("ul").hasClass('hide')){
@@ -61,6 +71,7 @@ $(document).ready(function(){
            $(this).next("ul").addClass("hide");
        }
     });
+
 
     // width가 1024 이상일떄
     $(window).on('resize load', function(){
