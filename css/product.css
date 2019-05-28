@@ -24,7 +24,7 @@
     font-family: 'Satisfy', cursive;
     font-size: 3em;
     color: gold;
-    border: 1px solid tranparent;
+    border: 1px solid transparent;
 }
 
 a {
@@ -32,7 +32,8 @@ a {
 }
 
 a:hover {
-    background-color: chartreuse;
+    text-decoration: underline;
+    text-decoration-color: floralwhite;
 }
 
 a:visited {
