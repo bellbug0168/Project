@@ -26,18 +26,23 @@ jQuery(document).ready(function ($) {
     b.on('mouseover', function () {
         b.fadeOut(2000, function () {
             b.fadeIn(2000, function () {
-
+                $(this).css('background', 'url("http://127.0.0.1:49261/img/freestocks-org-132631-unsplash.jpg")').css('background-size', 'cover').css('background-position', 'center');
             });
         });
-        // c.appendTo(this).css('background-color', 'lime')
     });
 
     // menu slide down
-    var slide = $(".header_nav").find('ul').find('li').eq(0);
-    slide.on('click', function () {
-        $(this)
-
-        slide.slideDown();
+    var sl = $('.header_nav').find('ul').find('li');
+    sl.on('mouseover', function () {
+        if ($(this).children('div').hasClass('hide')) {
+            var hi = sl.children('div').not('hide').slideUp(500);
+            hi.addClass('hide');
+            $(this).children('div').slideDown(500);
+            $(this).children('div').removeClass('hide');
+        } else {
+            $(this).children('div').addClass('hide');
+            $(this).children('div').slideUp(500);
+        }
     });
 
 
