@@ -83,7 +83,7 @@ header .header_nav {
     width: 800px;
     height: 400px;
     left 200px;
-    border: 1px solid silver;
+    border: 1px solid transparent;
 }
 
 header .header_nav ul li {
