@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+.watch {
+    font-family: 'Black Han Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    right: 8%;
+    font-size: 2em;
+    border: 10px solid goldenrod;
+    background-color: saddlebrown;
+    box-sizing: border-box;
+    padding: 10px 0;
+    color: gold;
+}
+
 #map {
     position: relative;
     left: 10%;
@@ -134,7 +148,7 @@ body {
 #pnbtn a {
     position: relative;
     display: inline-block;
-    top: 23em;
+    top: 15em;
     width: 25px;
     height: 25px;
     margin-left: 40px;

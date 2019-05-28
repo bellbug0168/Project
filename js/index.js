@@ -1,5 +1,13 @@
 $(function () {
 
+    setInterval(function () {
+        let d = new Date();
+        let h = d.getHours();
+        let m = d.getMinutes();
+        let s = d.getSeconds();
+        document.getElementsByClassName('watch')[0].textContent = h + " : " + m + " : " + s;
+        document.getElementsByClassName('watch')[1].textContent = h + " : " + m + " : " + s;
+    }, 1000);
     $("#carousel").flipster({
         buttons: true,
         style: 'coverflow',

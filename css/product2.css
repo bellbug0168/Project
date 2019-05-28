@@ -5,16 +5,12 @@
 
 .wrap {
     margin: 0 auto;
-    width: 1600px;
+    width: 460px;
     color: darkgoldenrod;
 }
 
 .wrap ul li {
     list-style: none;
-}
-
-.wrap > div {
-    float: left;
 }
 
 #logo {
@@ -39,23 +35,23 @@ a:visited {
     color: goldenrod;
 }
 
-header {
-    width: 30%;
-    height: 300px;
-    float: right;
+.wrap > div {
+    position: relative;
+    left: 30%;
+    margin-bottom: -10%;
 }
 
 header form {
     display: inline-block;
-    position: absolute;
-    left: 50%;
+    position: relative;
+    left: 8%;
     margin-top: 20px;
 }
 
 header .location {
     display: inline-block;
     position: absolute;
-    left: 70%;
+    left: 60%;
     margin-top: 20px;
     width: 150px;
 }
@@ -63,15 +59,16 @@ header .location {
 header .place {
     display: inline-block;
     position: absolute;
-    left: 80%;
+    left: 75%;
     margin-top: 20px;
-    float: right;
     width: 150px;
 }
 
 header .header_nav {
-    position: absolute;
-    top: 100px;
+    position: relative;
+    margin-top: -15%;
+    margin-bottom: 5%;
+    margin-left: 2%;
 }
 
 .hide {
@@ -80,9 +77,8 @@ header .header_nav {
 
 .header_nav div {
     position: absolute;
-    width: 800px;
-    height: 400px;
-    left 200px;
+    width: 300px;
+    height: 200px;
     border: 1px solid transparent;
 }
 
@@ -114,8 +110,8 @@ header .header_nav ul li {
 }
 
 .bn > div:nth-child(2) img {
-    width: 1600px;
-    height: 355px;
+    width: 100%;
+    height: 320px;
 }
 
 .main {
@@ -155,7 +151,6 @@ header .header_nav ul li {
     width: 300px;
     height: 50px;
     margin-bottom: 30px;
-    float: right;
 }
 
 article {
@@ -164,12 +159,10 @@ article {
 
 .wrap .main article ul li {
     position: relative;
-    display: inline-block;
     padding: 15px 8%;
     max-width: 80px;
-    margin: auto;
+    margin-left: 85px;
     border: 1px solid transparent;
-
 }
 
 .wrap section article img {
@@ -183,16 +176,18 @@ article li {
 footer {
     border: 1px solid transparent;
     border-top: 3px solid gold;
-    height: 300px;
+    height: 460px;
     margin: 30px;
     padding: 20px;
+    max-width: 400px;
 }
 
 #logo2 {
     width: 200px;
     height: 100px;
-    margin-top: 80px;
-    margin-right: 100px;
+    margin-top: 15px;
+    margin-left: 24%;
+    margin-bottom: 15px;
     font-family: 'Satisfy', cursive;
     font-size: 3em;
     color: gold;
@@ -202,7 +197,7 @@ footer {
 
 footer > div ul {
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 
 footer > div ul > li:nth-child(1) {
@@ -211,24 +206,23 @@ footer > div ul > li:nth-child(1) {
     margin-bottom: 15px;
 }
 
-footer > div > ul li {
-    left: 10%;
-}
-
 footer > div > ul:nth-child(2) {
-    left: 25%;
+    left: 7%;
+    bottom: 20px;
 }
 
 footer > div > ul:nth-child(3) {
-    left: 37%;
+    left: 40%;
+    bottom: 63px;
 }
 
 footer > div > ul:nth-child(4) {
-    left: 52%;
+    left: 7%;
 }
 
 footer > div > ul:nth-child(5) {
-    left: 68%;
+    left: 20%;
+    bottom: 63px;
 }
 
 #copyright {

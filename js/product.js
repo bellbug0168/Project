@@ -19,31 +19,29 @@ jQuery(document).ready(function ($) {
         $(this).find('li').hide();
     });
 
-    // menu event
-    var b = $('.bn').find('div').eq(1); // 밤하늘
-    var c = $('.header_nav').find('ul'); // 메뉴들
-
-    b.on('mouseover', function () {
-        b.fadeOut(2000, function () {
-            b.fadeIn(2000, function () {
-
-            });
-        });
-        // c.appendTo(this).css('background-color', 'lime')
-    });
-
     // menu slide down
-    var slide = $(".header_nav").find('ul').find('li').eq(0);
-    slide.on('click', function () {
-        $(this)
-
-        slide.slideDown();
+    var sl = $('.header_nav').find('ul').find('li');
+    sl.on('click', function () {
+        if ($(this).children('div').hasClass('hide')) {
+            var hi = sl.children('div').not('hide').slideUp(500);
+            hi.addClass('hide');
+            $(this).children('div').slideDown(500);
+            $(this).children('div').removeClass('hide');
+        } else {
+            $(this).children('div').addClass('hide');
+            $(this).children('div').slideUp(500);
+        }
     });
 
 
     // 필터링
     var ar_fil = $('article').find('.pronum');
     console.log(ar_fil);
+
+    // page 이름
+    var docu = $(document).find('title').text();
+    var pn = $('.main').find('div').find('h2');
+    $(pn).docu;
 
     // mouseover 시 article 사진 확대
     var d = $('article').find('ul').find('li').find('a').find('img');
