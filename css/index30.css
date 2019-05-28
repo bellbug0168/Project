@@ -131,6 +131,21 @@ nav.mhide {
 #content img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 3px 3px silver;
+}
+
+#content h3{
+    color:lightcoral;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+#content p{
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 #map {
@@ -145,7 +160,7 @@ nav.mhide {
 }
 
 #map ~ div span {
-    color: darkblue;
+    color: green;
 }
 
 #map ~ div ul li:first-of-type {

@@ -22,7 +22,7 @@
 }
 
 #map ~ div span {
-    color: darkblue;
+    color: green;
 }
 
 
@@ -253,8 +253,8 @@ h2 {
 
 #content div:first-of-type > h3 {
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 1.8em;
-    color: darkblue;
+    font-size: 1.7em;
+    color: lightcoral;
 }
 
 
@@ -277,8 +277,8 @@ h2 {
 
 #content div:nth-of-type(2) > h3 {
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 1.8em;
-    color: darkblue;
+    font-size: 1.7em;
+    color: lightcoral;
 }
 
 #content div:nth-of-type(2) > p {
@@ -299,13 +299,13 @@ h2 {
 
 #content div:nth-of-type(3) > h3 {
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 1.8em;
-    color: darkblue;
+    font-size: 1.7em;
+    color: lightcoral;
 }
 
 #content div:nth-of-type(3) > p {
     font-size: 1.2em;
-    width: 95%;
+    width: 96%;
     font-family: 'Yeon Sung', cursive;
     font-family: 'Jua', sans-serif;
 }
