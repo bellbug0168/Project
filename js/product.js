@@ -54,9 +54,9 @@ jQuery(document).ready(function ($) {
 
     // focus, blur tab 시 배경색 변경
     $('a').on('focus', function () {
-        $(this).css('background-color', 'chartreuse');
+        $(this).css('text-decoration', 'underline').css('text-decoration-color', 'floralwhite');
     });
     $('a').on('blur', function () {
-        $(this).css('background-color', 'white');
+        $(this).css('text-decoration', 'underline').css('text-decoration-color', 'floralwhite');
     });
 });

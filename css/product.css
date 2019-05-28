@@ -97,7 +97,8 @@ header .header_nav ul li {
     border: 1px solid transparent;
     background-color: gold;
     position: absolute;
-
+    right: 90%;
+    z-index: 100;
 }
 
 .bn {
