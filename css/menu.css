@@ -29,7 +29,7 @@ label.mobile_menu span {
 .nav a:link,
 .nav a:visited {
     color: black;
- font-weight: 800;
+    font-weight: 800;
 }
 
 .nav > li {
@@ -44,6 +44,7 @@ label.mobile_menu span {
 .nav > li > a {
     padding: 30px 20px;
     display: block;
+    text-decoration: none;
 }
 
 /*.nav > li:hover > a{
@@ -53,9 +54,9 @@ label.mobile_menu span {
 /*.nav > li:hover {
     border-top: 5px solid;
 }*/
-.nav li a:hover{
+.nav li a:hover {
     border-bottom: 5px solid;
-
+    text-decoration: none;
     /*여기 다시봐라*/
 }
 
@@ -104,16 +105,13 @@ label.mobile_menu span {
 	background-color: #004b6f;
 }input#mobile_menu { display: none; }
 
-.nav > li > ul li ul li ul {
-	background-color: #004b6f;
-}
 
 .nav > li > ul li ul li ul li:hover {
 	background-color: #00344d;
 }
 */
 
-.column ul li a{
+.column ul li a {
     color: white;
 }
 
@@ -124,7 +122,7 @@ label.mobile_menu span {
     list-style: none;
     top: 73px;
     left: 0px;
-    background-color: #595959;
+    background-color: #ccad00;
     width: 100%;
     min-height: 100px;
     text-align: left;
@@ -210,10 +208,9 @@ Arrows .nav > li.dropdown > a:after {
 
 .nav > li.search {
     border: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
-    float: right;
-    padding: 17px 6px;
+
+    padding: 10px 6px 6px 38px;
     position: relative;
 }
 
@@ -223,18 +220,20 @@ Arrows .nav > li.dropdown > a:after {
 
 
 .nav > li input {
-    padding: 7px 6px 6px 38px;
+    padding: 10px 6px 6px 38px;
     margin: 0 5px;
-    color: #fff;
+    color: black;
     border: none;
     background-color: white;
     font-size: 14px;
     border: 1px solid black;
+    position: relative;
+    left: 20px;
 }
 
 .nav > li input:focus {
     outline: none;
-    border-color: white;
+    border-color: black;
 }
 
 .nav > li.search i {
@@ -243,4 +242,57 @@ Arrows .nav > li.dropdown > a:after {
     top: 20px;
     color: #fff;
     font-size: 17px;
+}
+
+
+/*    순위*/
+#content {
+    position: relative;
+    left: 50px;
+    top: 5px;
+    margin: 0 5px;
+    padding: 8px 3px;
+    background: gold;
+    clear: both;
+
+}
+
+#rank-list a {
+    color: black;
+    text-decoration: none;
+}
+
+#rank-list a:hover {
+    text-decoration: underline;
+}
+
+#rank-list {
+    overflow: hidden;
+    width: 150px;
+    height: 19px;
+    margin: 0;
+}
+
+#rank-list dt {
+    display: none;
+}
+
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list li {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
 }
