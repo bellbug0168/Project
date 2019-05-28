@@ -7,91 +7,37 @@ body {
     background-color: antiquewhite;
 }
 
-@media ( min-width: 1024px ) {
-    .nav-up {
-        top: -60px;
-    }
-
-    .nav-down{
-        top: 0px;
-    }
-
-    .menu{
-    float: right;
-    margin-right: 50px;
-    }
-
-    .menu li{
-        display: inline-block;
-    }
-
-    .menu img{
-        display: none;
-    }
-
-    nav ul li{
-        padding: 20px 10px;
-        display: inline-block;
-        list-style: none;
-    }
-
-    nav ul li a{
-        padding: 20px 30px;
-        text-decoration: none;
-        color: black;
-    }
-
+.nav-up {
+    top: -60px;
 }
 
-@media ( max-width: 1023px ) {
-    .nav-up {
-        top: -60px;
-    }
+.nav-down{
+    top: 0px;
+}
 
-    .nav-down{
-        top: 0px;
-    }
-    .home li{
-        padding: 20px 10px;
-        list-style: none;
-    }
+.menu{
+    float: right;
+    margin-right: 50px;
+}
 
-    .home li a{
-        padding-left: 20px;
-        text-decoration: none;
-        color: black;
-    }
+.menu li{
+    display: inline-block;
+}
 
-    .menu{
-        position: relative;
-        margin-top: -20px;
-        width: 100%;
-        float: right;
-    }
+.menu img{
+    display: none;
+}
 
-    .menu img{
-        float: right;
-        margin-top: -60px;
-        width: 60px;
-        z-index: 1;
-    }
+nav ul li{
+    padding: 20px 10px;
+    display: inline-block;
+    list-style: none;
+}
 
-    .menu li{
-        margin-top: -20px;
-    }
-
-    .menu li a{
-        margin-top: 20px;
-        display: block;
-        padding-left: 50%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-decoration: none;
-        color: black;
-        background-color: #f5b335;
-        border-top: 1px solid;
-
-    }
+nav ul li a{
+    padding: 20px 30px;
+    text-decoration: none;
+    color: black;
 }
 
 /*메인-메뉴*/
@@ -240,6 +186,7 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service_tel{
+    text-align: center;
     background-image: url(/img/time-call.png);
     background-position: 60px 50px;
     background-repeat: no-repeat;
@@ -270,6 +217,7 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service_tel_view{
+    text-align: center;
     display: none;
     width: 245px;
     height: 300px;
@@ -289,6 +237,7 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service_email{
+    text-align: center;
     background-image: url(/img/email.png);
     background-position: 60px 50px;
     background-repeat: no-repeat;
@@ -324,6 +273,7 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 .service_email_view{
+    text-align: center;
     display: none;
     width: 245px;
     height: 300px;

@@ -46,6 +46,22 @@ body {
         margin-right: 26%;
     }
 
+
+    a.top{
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        left: 90%;
+        bottom: 40px;
+        display: none;
+        background-color: dimgrey;
+    }
+
+    .tab h2{
+        margin-left: 10px;
+    }
+
 }
 
 @media ( max-width: 1023px ) {
@@ -101,6 +117,24 @@ body {
     .list{
         height: 100%;
     }
+
+    a.top{
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        left: 85%;
+        bottom: 40px;
+        display: none;
+        background-color: dimgrey;
+    }
+
+    .tab h2{
+        position: relative;
+        top: -30px;
+        width: 28%;
+        margin-left: 13px;
+    }
 }
 
 /*메인-메뉴*/
@@ -148,8 +182,8 @@ nav ul li a:hover, nav ul li a:focus{
 /*리스트*/
 .tab{
     position: relative;
-    top: 30px;
-    height: 650px;
+    top: 100px;
+    height: 900px;
 }
 
 .tab>li{
@@ -173,6 +207,7 @@ ul h2{
 }
 
 .tab a{
+    font-family: fantasy;
     text-decoration: none;
     color: black;
     display: block;
@@ -180,13 +215,14 @@ ul h2{
 
 .tab a:hover, .tab a:focus{
     color: white;
-    background-color: red;
+    background-color: #1F305D;
 }
 
 .list_menu{
     list-style: none;
-    border: 1px solid;
-    margin: 3px;
+    border: 5px outset;
+    margin-top: 10px;
+    padding: 5px;
 }
 
 .list_menu ul{
@@ -194,10 +230,11 @@ ul h2{
     border-top: 1px solid;
     height: 130px;
     font-size: 1.2em;
+    text-indent: 10px;
+    padding: 10px;
 }
 
 .list_menu a{
-    color: firebrick;
     display: block;
     text-decoration: none;
 }
@@ -208,7 +245,7 @@ ul h2{
 
 .list_menu a:hover, .list_menu a:focus{
     color: white;
-    background-color: firebrick;
+    background-color: #1F305D;
 }
 /*리스트 끝*/
 
@@ -216,12 +253,10 @@ ul h2{
 .footer{
     margin-top: 10%;
     width: 100%;
-    height: 100px;
     border: 1px solid;
     background-color: black;
     opacity: 0.7;
     bottom: auto;
-
 }
 
 .footer .p1{
@@ -240,16 +275,5 @@ ul h2{
     color: white;
     margin-top: 15px;
     margin-left: 10px;
-}
-
-a.top{
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    left: 90%;
-    bottom: 40px;
-    display: none;
-    background-color: dimgrey;
 }
 /*푸터 끝*/

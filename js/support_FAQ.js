@@ -55,7 +55,7 @@ $(document).ready(function(){
     $('.tab>li>h2').on('click', function(){
         $('.tab>li').find('ul').hide();
         $('.tab>li').find('h2').css('background-color', 'white');
-        $(this).css('background-color', 'red').next().show().css('background-color', 'white');
+        $(this).css('background-color', '#1F305D').next().show().css('background-color', 'white');
     });
 
     // 리스트 메뉴 끝
