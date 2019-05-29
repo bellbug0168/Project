@@ -8,49 +8,58 @@
      width: 100%;
      height: 100%;
      overflow-y: scroll;
-}
+ }
 
-#wrap{
-    width: 1000px;
-    margin: 0 auto;
-}
-#logo{
-    font-family: 'Satisfy', cursive;
-    font-size: 8em;
-    color: gold;
-    text-align: center;
-    height: 150px;
-    margin-top:-100px;
-    margin-bottom: 50px;    }
+ #wrap {
+     width: 1000px;
+     margin: 0 auto;
+ }
 
-header{
-    height: 250px;
-}
-/* #wowslider-container>.ws_images>ul>li>img{
+ #logo {
+     font-family: 'Satisfy', cursive;
+     font-size: 8em;
+     color: gold;
+     text-align: center;
+     height: 150px;
+     margin-top: -100px;
+     margin-bottom: 50px;
+ }
+
+ header {
+     height: 250px;
+ }
+
+ /* #wowslider-container>.ws_images>ul>li>img{
   margin: 0 auto;
  }*/
  .center {
      margin-top: 250px;
      box-sizing: border-box;
  }
+
  .slider {
      width: 80%;
      margin: 100px auto;
  }
+
  .slick-slide {
      margin: 0px 20px;
  }
+
  .slick-slide img {
      width: 100%;
  }
+
  .slick-prev:before,
  .slick-next:before {
      color: black;
  }
+
  .slick-slide {
      transition: all ease-in-out .1s;
      opacity: .2;
  }
+
  .slick-active {
      opacity: .5;
  }
@@ -61,7 +70,7 @@ header{
 
  /*    filpnav*/
  #filpnav {
-     width: 50%;
+     width: 70%;
      height: 900px;
      margin: 0 auto;
      margin-top: 100px;
@@ -86,7 +95,7 @@ header{
      font-size: 2em;
      font-family: '궁서';
      text-align: center;
-/*
+     /*
      position: relative;
      top: 140px;
 */
@@ -129,6 +138,7 @@ header{
      text-align: center;
      color: white;
  }
+
  #tail {
      margin-top: 350px;
      padding-left: 20px;
@@ -167,9 +177,16 @@ header{
  #tail ul li a:hover {
      text-decoration: underline;
  }
-#up {
-    margin-top: 290px;
-}
+
+ #up {
+     margin-top: 290px;
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     right: 15px;
+     bottom: 45px;
+ }
+
  #up img {
      width: 50px;
      height: 50px;
@@ -178,6 +195,7 @@ header{
      bottom: -70%;
      float: right;
  }
+
  #up img:hover {
      border: 3px solid #ccad00;
      border-radius: 20%;
