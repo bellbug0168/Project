@@ -6,6 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/detail.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        span {
+            color: firebrick;
+        }
+    </style>
+    <link rel="stylesheet" href="css/product.css" media="screen and (min-width: 874px)">
+    <link rel="stylesheet" href="css/product2.css" media="screen and (max-width: 500px)">
+    <meta name="viewport" content="width=device-width, initial-scale='1.0', minimum-scale='1.0', maximum-scale='2.0'">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/detail.js"></script>
 </head>
@@ -104,90 +112,163 @@
         </header>
 
 
-        <article>
+        <article class="a1">
             <!-- article : 경로, 사진, 제품 이름, 제품 번호, 가격, 판매점 찾기 (결제창으로), 캐러셀 -->
-            <span>여긴 경로가 들어 갈 자리야.</span>
-            <div>여긴 사진</div>
-            <span>여긴 제품 이름</span>
-            <span>여긴 제품 번호</span>
-            <span>여긴 가격</span>
-            <div>판매점 찾기</div>
-            <span>다른 스트랩과 컬러도 있습니다.</span>
-            <div>캐러세에에에에에엘</div>
+            <span>경로</span>
+            <div><a href="pay.html"><img src="img/T099.png" alt="T099"></a></div>
+            <div>
+                <span>[티쏘] 슈망 데 뚜렐 파워매틱 80</span>
+                <span>TISSOT CHEMIN DES TOURELLES POWERMATIC 80</span>
+                <span>T099.407.16.047.00</span>
+                <span>870,000원</span>
+                <form>
+                    <lable for="buy"></lable>
+                    <a href="pay.html"><input type="button" value="구매하기" id="buy"></a>
+                </form>
+            </div>
         </article>
 
-        <article>
+        <article class="a2">
             <!-- article 2 : 기술 사양-->
-            <div>기술 사양
-            <div>
-                <span>참조번호</span>
-                <span>T0994071604800</span>
-                <span>제조국</span>
-                <span>스위스 제품</span>
-                <span>보증</span>
-                <span>2년 보증</span>
-                <span>제조사 / 수입자</span>
-                <span>TISSOT/ (주)스와치그룹코리아</span>
-                <span>컬렉션</span>
-                <span>티-클래식</span>
-                <span>성별</span>
-                <span>남성</span>
-                <span>케이스 형태</span>
-                <span>원형</span>
-                <span>방수</span>
-                <span>방수 최대 기압 5바(50m/165ft)</span>
-                <span>케이스 소재</span>
-                <span>316L 스테인리스 스틸 케이스</span>
-                <span>길이</span>
-                <span>42</span>
-                <span>폭</span>
-                <span>42</span>
-                <span>러그</span>
-                <span>21</span>
-                <span>두께</span>
-                <span>10.9</span>
-                <span>케이스 옵션</span>
-                <span>투명 케이스백</span>
-                <span>무게</span>
-                <span>79</span>
-                <span>크리스탈</span>
-                <span>비반사 코팅 처리한 반구형 스크래치 방지 사파이어 크리스탈</span>
-                <span>다이얼 색상</span>
-                <span>블루</span>
-                <span>인덱스</span>
-                <span>로마 숫자 및 인덱스</span>
-                <span>무브먼트</span>
-                <span>스위스 오토매틱</span>
-                <span>모델</span>
-                <span>POWERMATIC 80.111</span>
-                <span>칼리버</span>
-                <span>11 1/2'''</span>
-                <span>직경(mm)</span>
-                <span>25.6</span>
-                <span>주얼</span>
-                <span>23</span>
-                <span>에너지</span>
-                <span>메커니컬</span>
-                <span>다이얼</span>
-                <span>HMSD</span>
-                <span>파워리저브</span>
-                <span>파워리저브 최대 80시간</span>
-                <span>스트랩 / 체인 참조번호</span>
-                <span>T600041857</span>
-                <span>스트랩 디테일</span>
-                <span>가죽</span>
-                <span>앞면</span>
-                <span>엠보싱 처리한 앨리게이터 모양의 소가죽</span>
-                <span>뒷면</span>
-                <span>합성섬유</span>
-                <span>스트랩 색상</span>
-                <span>블루</span>
-                <span>버클</span>
-                <span>푸시 버튼이 포함된 버터플라이 클라스프</span>
-                <span></span>
-                <span>사용자 메뉴얼</span>
-            </div>
-            </div>
+            <table>
+                <thead><a href="#">기술 사양</a></thead>
+                <tbody>
+                    <tr>
+                        <td>참조번호</td>
+                        <td>T0994071604800</td>
+                    </tr>
+                    <tr>
+                        <td>제조국</td>
+                        <td>스위스 제품</td>
+                    </tr>
+                    <tr>
+                        <td>보증</td>
+                        <td>2년 보증</td>
+                    </tr>
+                    <tr>
+                        <td>제조사/수입자</td>
+                        <td>TISSOT/ (주)스와치그룹코리아</td>
+                    </tr>
+                    <tr>
+                        <td>컬렉션</td>
+                        <td>티-클래식</td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>남성</td>
+                    </tr>
+                    <tr>
+                        <td>케이스 형태</td>
+                        <td>원형</td>
+                    </tr>
+                    <tr>
+                        <td>방수</td>
+                        <td>방수 최대 기압 5바(50m/165ft)</td>
+                    </tr>
+                    <tr>
+                        <td>케이스 소재</td>
+                        <td>316L 스테인리스 스틸 케이스</td>
+                    </tr>
+                    <tr>
+                        <td>길이</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>폭</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>러그</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>두께</td>
+                        <td>10.9</td>
+                    </tr>
+                    <tr>
+                        <td>케이스 옵션</td>
+                        <td>투명 케이스백</td>
+                    </tr>
+                    <tr>
+                        <td>무게</td>
+                        <td>79</td>
+                    </tr>
+                    <tr>
+                        <td>크리스탈</td>
+                        <td>비반사 코팅 처리한 반구형 스크래치 방지 사파이어 크리스탈</td>
+                    </tr>
+                    <tr>
+                        <td>다이얼 색상</td>
+                        <td>블루</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>　</thead>
+                <tbody>
+                    <tr>
+                        <td>인덱스</td>
+                        <td>로마 숫자 및 인덱스</td>
+                    </tr>
+                    <tr>
+                        <td>무브먼트</td>
+                        <td>스위스 오토매틱</td>
+                    </tr>
+                    <tr>
+                        <td>모델</td>
+                        <td>POWERMATIC 80.111</td>
+                    </tr>
+                    <tr>
+                        <td>칼리버</td>
+                        <td>11 1/2'''</td>
+                    </tr>
+                    <tr>
+                        <td>직경(mm)</td>
+                        <td> 25,6</td>
+                    </tr>
+                    <tr>
+                        <td>주얼</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>에너지</td>
+                        <td>메커니컬</td>
+                    </tr>
+                    <tr>
+                        <td>다이얼</td>
+                        <td>HMSD</td>
+                    </tr>
+                    <tr>
+                        <td>파워리저브</td>
+                        <td>파워리저브 최대 80시간</td>
+                    </tr>
+                    <tr>
+                        <td>스트랩/체인 참조번호</td>
+                        <td>T600041857</td>
+                    </tr>
+                    <tr>
+                        <td>스트랩 디테일</td>
+                        <td>가죽</td>
+                    </tr>
+                    <tr>
+                        <td>앞면</td>
+                        <td>엠보싱 처리한 앨리게이터 모양의 소가죽</td>
+                    </tr>
+                    <tr>
+                        <td>뒷면</td>
+                        <td> 합성섬유</td>
+                    </tr>
+                    <tr>
+                        <td>스트랩 색상</td>
+                        <td>블루</td>
+                    </tr>
+                    <tr>
+                        <td>버클</td>
+                        <td>푸시 버튼이 포함된 버터플라이 클라스프</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
 
         <footer>
